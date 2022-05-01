@@ -1,0 +1,777 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{neural_machine}{article}{}
+      \name{author}{6}{}{%
+        {{hash=4e48a837c5836ea21da959809f23f615}{%
+           family={Zuo},
+           familyi={Z\bibinitperiod},
+           given={Fei},
+           giveni={F\bibinitperiod}}}%
+        {{hash=454b205decd85572e544b67661174894}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiaopeng},
+           giveni={X\bibinitperiod}}}%
+        {{hash=8d522ec7ae512686a2c4dba6f7a6c724}{%
+           family={Young},
+           familyi={Y\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fc34152f7103daa992d04e2b145480ed}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Lannan},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cbc415fc36c599555cb13b0e962f1c25}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Qiang},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1f8789f570d89e9a8303c21f6d9b7a1e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhexin},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Internet Society}%
+      }
+      \strng{namehash}{4e7a4c904a9002dd9928f3aaa5479da5}
+      \strng{fullhash}{c404d7678eea13698e1296fdf20e14cd}
+      \strng{bibnamehash}{4e7a4c904a9002dd9928f3aaa5479da5}
+      \strng{authorbibnamehash}{4e7a4c904a9002dd9928f3aaa5479da5}
+      \strng{authornamehash}{4e7a4c904a9002dd9928f3aaa5479da5}
+      \strng{authorfullhash}{c404d7678eea13698e1296fdf20e14cd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings 2019 Network and Distributed System Security Symposium}
+      \field{title}{Neural Machine Translation Inspired Binary Code Similarity Comparison beyond Function Pairs}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.14722/ndss.2019.23492
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.14722/ndss.2019.23492
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.14722/ndss.2019.23492
+      \endverb
+    \endentry
+    \entry{weighted_edge_scheduling}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8e9adf2c78c7e31af092f3643bc983be}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c9eaa8c0d6189111735cdebae930c887}{%
+           family={Ravindran},
+           familyi={R\bibinitperiod},
+           given={Rajiv},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c871bdacd849e2bea80db8114d865120}{%
+           family={Mahlke},
+           familyi={M\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{fullhash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{bibnamehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{authorbibnamehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{authornamehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{authorfullhash}{dbc195aceee79694cafd8563c6a86d61}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{40th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2007)}
+      \field{title}{Data Access Partitioning for Fine-grain Parallelism on Multicore Architectures}
+      \field{year}{2007}
+      \field{pages}{369\bibrangedash 380}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/MICRO.2007.15
+      \endverb
+    \endentry
+    \entry{task_arrangement}{article}{}
+      \name{author}{4}{}{%
+        {{hash=2c323adf1643b8d88e1f445a3bb09be7}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Zijun},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e112edf98053d33b50dd8d1ba7133a35}{%
+           family={Qu},
+           familyi={Q\bibinitperiod},
+           given={Guangzhi},
+           giveni={G\bibinitperiod}}}%
+        {{hash=fa97927921a403cfe822973e31081dca}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=65afd11c8e50cacdbd6ae4f35d03e308}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Feng},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{87c369c5122352e4750f87cebc22b7cb}
+      \strng{fullhash}{c529be0a258052ed7ab3aa216333510f}
+      \strng{bibnamehash}{87c369c5122352e4750f87cebc22b7cb}
+      \strng{authorbibnamehash}{87c369c5122352e4750f87cebc22b7cb}
+      \strng{authornamehash}{87c369c5122352e4750f87cebc22b7cb}
+      \strng{authorfullhash}{c529be0a258052ed7ab3aa216333510f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the growing use of multi-core processors in the market, efficient and effective task parallelization strategies are on huge demand, so are the task scheduling algorithms. The scalability and efficiency of the existing algorithms on multi-core task scheduling need to be improved. To schedule real-time tasks on a multi-core processor, any pair of inter-dependent tasks must be executed following their original execution order. The directed acyclic graph (DAG) is commonly used to study the internal structure of a program. In this work, we investigated the property of the data dependency to eliminate the unnecessary execution constraints, and improved the DAG model by incorporating the temporal property of these dependencies. Based on such a model, we proposed a dynamic decomposed scheduling (DDS) strategy. With DDS, the dependent tasks could be released and executed earlier before the completion of their precedent tasks without producing any data hazards. The experiments were conducted on both synthesized tasks and real industrial embedded applications, the results show that DDS has a good performance in multi-core task scheduling, and it outperforms the state-of-the-art scheduling algorithms including the decomposed scheduling, the global scheduling, and the federated scheduling.}
+      \field{issn}{0020-0255}
+      \field{journaltitle}{Information Sciences}
+      \field{title}{Exploit the data level parallelism and schedule dependent tasks on the multi-core processors}
+      \field{volume}{585}
+      \field{year}{2022}
+      \field{pages}{382\bibrangedash 394}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.ins.2021.10.072
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0020025521010963
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0020025521010963
+      \endverb
+      \keyw{Task decomposition,Data dependency,DAG,Multi-core task scheduling}
+    \endentry
+    \entry{code_cache_1}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=abcf31b59c079c0f46b8a6d8259f8288}{%
+           family={Cota},
+           familyi={C\bibinitperiod},
+           given={Emilio\bibnamedelima G.},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=ed9a63eb6d181d99afcca8a2f54f6aa6}{%
+           family={Carloni},
+           familyi={C\bibinitperiod},
+           given={Luca\bibnamedelima P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Providence, RI, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{5523d4ed8a00ed91419125585566d935}
+      \strng{fullhash}{5523d4ed8a00ed91419125585566d935}
+      \strng{bibnamehash}{5523d4ed8a00ed91419125585566d935}
+      \strng{authorbibnamehash}{5523d4ed8a00ed91419125585566d935}
+      \strng{authornamehash}{5523d4ed8a00ed91419125585566d935}
+      \strng{authorfullhash}{5523d4ed8a00ed91419125585566d935}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The rise in instruction set architecture (ISA) diversity and the growing adoption of virtual machines are driving a need for fast, scalable, full-system, cross-ISA emulation and instrumentation tools. Unfortunately, achieving high performance for these cross-ISA tools is challenging due to dynamic binary translation (DBT) overhead and the complexity of instrumenting full-system emulators. In this paper we improve cross-ISA emulation and instrumentation performance through three novel techniques. First, we increase floating point (FP) emulation performance by observing that most FP operations can be correctly emulated by surrounding the use of the host FP unit with a minimal amount of non-FP code. Second, we introduce the design of a translator with a shared code cache that scales for multi-core guests, even when they generate translated code in parallel at a high rate. Third, we present an ISA-agnostic instrumentation layer that can instrument guest operations that occur outside of the DBT’s intermediate representation (IR), which are common in full-system emulators. We implement our approach in Qelt, a high-performance cross-ISA machine emulator and instrumentation tool based on QEMU. Our results show that Qelt scales to 32 cores when emulating a guest machine used for parallel compilation, which demonstrates scalable code translation. Furthermore, experiments based on SPEC06 show that Qelt (1) outperforms QEMU as a full-system cross-ISA machine emulator by 1.76\texttimes{}/2.18\texttimes{} for integer/FP workloads, (2) outperforms state-of-the-art, cross-ISA, full-system instrumentation tools by 1.5\texttimes{}-3\texttimes{}, and (3) can match the performance of Pin, a state-of-the-art, same-ISA DBI tool, when used for complex instrumentation such as cache simulation.}
+      \field{booktitle}{Proceedings of the 15th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments}
+      \field{isbn}{9781450360203}
+      \field{series}{VEE 2019}
+      \field{title}{Cross-ISA Machine Instrumentation Using Fast and Scalable Dynamic Binary Translation}
+      \field{year}{2019}
+      \field{pages}{74\bibrangedash 87}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/3313808.3313811
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3313808.3313811
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3313808.3313811
+      \endverb
+      \keyw{Floating Point,Scalability,Binary Instrumentation,Machine Emulation,Dynamic Binary Translation}
+    \endentry
+    \entry{code_cache_with_fiber}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8136bc8dfd039be37786b5c67dca4d2f}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Xuan},
+           giveni={X\bibinitperiod}}}%
+        {{hash=7f3833a7adbcdf78b0aaa1a919332b42}{%
+           family={Mullins},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{90ede20f40923acf0c328cd308545ab0}
+      \strng{fullhash}{90ede20f40923acf0c328cd308545ab0}
+      \strng{bibnamehash}{90ede20f40923acf0c328cd308545ab0}
+      \strng{authorbibnamehash}{90ede20f40923acf0c328cd308545ab0}
+      \strng{authornamehash}{90ede20f40923acf0c328cd308545ab0}
+      \strng{authorfullhash}{90ede20f40923acf0c328cd308545ab0}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Accelerate Cycle-Level Full-System Simulation of Multi-Core {RISC-V} Systems with Binary Translation}
+      \field{volume}{abs/2005.11357}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2005.11357
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2005.11357
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2005.11357
+      \endverb
+    \endentry
+    \entry{sliding_window_parallelism}{article}{}
+      \name{author}{5}{}{%
+        {{hash=30ffe606f99970685a97300f5750130d}{%
+           family={Mencagli},
+           familyi={M\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f37b393564e895df695e4e4a17df5158}{%
+           family={Torquati},
+           familyi={T\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ce56d20d71cc752935677e2e9ddcb1e4}{%
+           family={Griebler},
+           familyi={G\bibinitperiod},
+           given={Dalvan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9153adc04187d83034fd2440938b5c08}{%
+           family={Danelutto},
+           familyi={D\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7aa43870b35591a72133297531b19142}{%
+           family={Fernandes},
+           familyi={F\bibinitperiod},
+           given={Luiz\bibnamedelimb Gustavo\bibnamedelima L.},
+           giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{379aae4f5b366acbf409af20f0b80915}
+      \strng{fullhash}{228d3a25779119c1e4f5b5955cf77f3e}
+      \strng{bibnamehash}{379aae4f5b366acbf409af20f0b80915}
+      \strng{authorbibnamehash}{379aae4f5b366acbf409af20f0b80915}
+      \strng{authornamehash}{379aae4f5b366acbf409af20f0b80915}
+      \strng{authorfullhash}{228d3a25779119c1e4f5b5955cf77f3e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Raising the Parallel Abstraction Level for Streaming Analytics Applications}
+      \field{volume}{7}
+      \field{year}{2019}
+      \field{pages}{131944\bibrangedash 131961}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2019.2941183
+      \endverb
+    \endentry
+    \entry{basic_block}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=f13cb4279cd607998980712e9f97d48c}{%
+           family={Littin},
+           familyi={L\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=5c4fbac03c53f391072e3ed800d12495}{%
+           family={McWha},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi A.\bibnamedelimi David},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=94b2fda300e846d35daff9fc9892f3eb}{%
+           family={Pearson},
+           familyi={P\bibinitperiod},
+           given={Murray},
+           giveni={M\bibinitperiod}}}%
+        {{hash=dfe2627a158814723493d8e8b05a87b7}{%
+           family={Cleary},
+           familyi={C\bibinitperiod},
+           given={John\bibnamedelima G.},
+           giveni={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbfcfa06dd6aaa91a219f74492e4b385}
+      \strng{fullhash}{2d0fde4624a1130387b10246ed237b9e}
+      \strng{bibnamehash}{cbfcfa06dd6aaa91a219f74492e4b385}
+      \strng{authorbibnamehash}{cbfcfa06dd6aaa91a219f74492e4b385}
+      \strng{authornamehash}{cbfcfa06dd6aaa91a219f74492e4b385}
+      \strng{authorfullhash}{2d0fde4624a1130387b10246ed237b9e}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Block Based Execution and Task Level Parallelism}
+      \field{year}{1998}
+    \endentry
+    \entry{vector_parallelism}{article}{}
+      \name{author}{2}{}{%
+        {{hash=abb3c6b10ced600c5539e95bbc44f156}{%
+           family={Rooholamin},
+           familyi={R\bibinitperiod},
+           given={Seyed\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=77a8ebb7d406607275f46650753cd0e2}{%
+           family={Ziavras},
+           familyi={Z\bibinitperiod},
+           given={Sotirios\bibnamedelima G.},
+           giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{3764c2edd85e67c086b4d9193524162b}
+      \strng{fullhash}{3764c2edd85e67c086b4d9193524162b}
+      \strng{bibnamehash}{3764c2edd85e67c086b4d9193524162b}
+      \strng{authorbibnamehash}{3764c2edd85e67c086b4d9193524162b}
+      \strng{authornamehash}{3764c2edd85e67c086b4d9193524162b}
+      \strng{authorfullhash}{3764c2edd85e67c086b4d9193524162b}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Taking advantage of DLP (Data-Level Parallelism) is indispensable in most data streaming and multimedia applications. Several architectures have been proposed to improve both the performance and energy consumption for such applications. Superscalar and VLIW (Very Long Instruction Word) processors along with SIMD (Single-Instruction Multiple-Data) and vector processor (VP) accelerators, are among the available options for designers to accomplish their desired requirements. We present an innovative architecture for a VP which separates the path for performing data shuffle and memory-indexed accesses from the data path for executing other vector instructions that access the memory. This separation speeds up the most common memory access operations by avoiding extra delays and unnecessary stalls. In our lane-based VP design, each vector lane uses its own private memory to avoid any stalls during memory access instructions. The proposed VP, which is developed in VHDL and prototyped on an FPGA, serves as a coprocessor for one or more scalar cores. Benchmarking shows that our VP can achieve very high performance. For example, it achieves a larger than 1500-fold speedup in the color space converting benchmark compared to running the code on a scalar core. The inclusion of distributed data shuffle engines across vector lanes has a spectacular impact on the execution time, primarily for applications like FFT (Fast-Fourier Transform) that require large amounts of data shuffling. Compared to running the benchmark on a VP without the shuffle engines, the speedup is 5.92 and 7.33 for the 64-point FFT without and with compiler optimization, respectively. Compared to runs on the scalar core, the achieved speedups for this benchmark are 52.07 and 110.45 without and with compiler optimization, respectively.}
+      \field{issn}{0141-9331}
+      \field{journaltitle}{Microprocessors and Microsystems}
+      \field{number}{4}
+      \field{title}{Modular vector processor architecture targeting at data-level parallelism}
+      \field{volume}{39}
+      \field{year}{2015}
+      \field{pages}{237\bibrangedash 249}
+      \range{pages}{13}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.micpro.2015.04.007
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0141933115000502
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0141933115000502
+      \endverb
+      \keyw{Parallelism,Vector processor,Performance,Speedup,Benchmarking}
+    \endentry
+    \entry{superword_parallelism}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8dcefe0985cb2d34097c3460e4e9c3ac}{%
+           family={Mendis},
+           familyi={M\bibinitperiod},
+           given={Charith},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dcb28881d25e46cc6308d0471f0df07c}{%
+           family={Amarasinghe},
+           familyi={A\bibinitperiod},
+           given={Saman},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{3ac40feb85880b1840a7428012d5923e}
+      \strng{fullhash}{3ac40feb85880b1840a7428012d5923e}
+      \strng{bibnamehash}{3ac40feb85880b1840a7428012d5923e}
+      \strng{authorbibnamehash}{3ac40feb85880b1840a7428012d5923e}
+      \strng{authornamehash}{3ac40feb85880b1840a7428012d5923e}
+      \strng{authorfullhash}{3ac40feb85880b1840a7428012d5923e}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. ACM Program. Lang.}
+      \field{month}{10}
+      \field{number}{OOPSLA}
+      \field{title}{GoSLP: Globally Optimized Superword Level Parallelism Framework}
+      \field{volume}{2}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1145/3276480
+      \endverb
+      \verb{urlraw}
+      \verb https://doi-org.srv-proxy1.library.tamu.edu/10.1145/3276480
+      \endverb
+      \verb{url}
+      \verb https://doi-org.srv-proxy1.library.tamu.edu/10.1145/3276480
+      \endverb
+      \keyw{Integer Linear Programming,Vector Permutation,Dynamic Programming,Superword Level Parallelism,Auto-vectorization,Statement Packing}
+    \endentry
+    \entry{data_partition}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8e9adf2c78c7e31af092f3643bc983be}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c9eaa8c0d6189111735cdebae930c887}{%
+           family={Ravindran},
+           familyi={R\bibinitperiod},
+           given={Rajiv},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c871bdacd849e2bea80db8114d865120}{%
+           family={Mahlke},
+           familyi={M\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{fullhash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{bibnamehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{authorbibnamehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{authornamehash}{dbc195aceee79694cafd8563c6a86d61}
+      \strng{authorfullhash}{dbc195aceee79694cafd8563c6a86d61}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{40th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2007)}
+      \field{title}{Data Access Partitioning for Fine-grain Parallelism on Multicore Architectures}
+      \field{year}{2007}
+      \field{pages}{369\bibrangedash 380}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/MICRO.2007.15
+      \endverb
+    \endentry
+    \entry{adaptive_dlp}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=13a345b1c4eb3446be4df069ec9c2221}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Lili},
+           giveni={L\bibinitperiod}}}%
+        {{hash=330e18fb499a5fa7fa598125962993f7}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8d8a3f556e48c279a12041db46f1e47c}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Yinhe},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=61a5f11b3a300a191d13bd823c06cf4c}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Xin},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b27caaa270eaa73de273cc60e7474bbd}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Bosheng},
+           giveni={B\bibinitperiod}}}%
+        {{hash=417dbb5cf4a86930cbfab55d146428ee}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiaowei},
+           giveni={X\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Austin, Texas}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{2a6e6e9ef298030c48eb800ffe6984dc}
+      \strng{fullhash}{ab8bf26a0646b27b86cad406c27bedcd}
+      \strng{bibnamehash}{2a6e6e9ef298030c48eb800ffe6984dc}
+      \strng{authorbibnamehash}{2a6e6e9ef298030c48eb800ffe6984dc}
+      \strng{authornamehash}{2a6e6e9ef298030c48eb800ffe6984dc}
+      \strng{authorfullhash}{ab8bf26a0646b27b86cad406c27bedcd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 53rd Annual Design Automation Conference}
+      \field{isbn}{9781450342360}
+      \field{series}{DAC '16}
+      \field{title}{C-Brain: A Deep Learning Accelerator That Tames the Diversity of CNNs through Adaptive Data-Level Parallelization}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1145/2897937.2897995
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2897937.2897995
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2897937.2897995
+      \endverb
+    \endentry
+    \entry{dlp_in_streaming}{article}{}
+      \name{author}{3}{}{%
+        {{hash=963ebc2749e244a8a0f375f62bf86509}{%
+           family={Plavec},
+           familyi={P\bibinitperiod},
+           given={Franjo},
+           giveni={F\bibinitperiod}}}%
+        {{hash=13cda7a751f2c759ca5c34cc2d3e226e}{%
+           family={Vranesic},
+           familyi={V\bibinitperiod},
+           given={Zvonko},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=6e6498c671cf0abbd2d02deff785c7ff}{%
+           family={Brown},
+           familyi={B\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
+      \strng{fullhash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
+      \strng{bibnamehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
+      \strng{authorbibnamehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
+      \strng{authornamehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
+      \strng{authorfullhash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article describes the design and implementation of a novel compilation flow that implements circuits in FPGAs from a streaming programming language. The streaming language supported is called FPGA Brook and is based on the existing Brook language. It allows system designers to express applications in a way that exposes parallelism, which can be exploited through hardware implementation. FPGA Brook supports replication, allowing parts of an application to be implemented as multiple hardware units operating in parallel. Hardware units are interconnected through FIFO buffers which use the small memory modules available in FPGAs. The FPGA Brook automated design flow uses a source-to-source compiler, developed as a part of this work, and combines it with a commercial behavioral synthesis tool to generate the hardware implementation. A suite of benchmark applications was developed in FPGA Brook and implemented using our design flow. Experimental results indicate that performance of many applications scales well with replication. Our benchmark applications also achieve significantly better results than corresponding implementations using a commercial behavioral synthesis tool. We conclude that using an automated design flow for implementation of streaming applications in FPGAs is a promising methodology.}
+      \field{issn}{1936-7406}
+      \field{journaltitle}{ACM Trans. Reconfigurable Technol. Syst.}
+      \field{month}{12}
+      \field{number}{4}
+      \field{title}{Exploiting Task- and Data-Level Parallelism in Streaming Applications Implemented in FPGAs}
+      \field{volume}{6}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1145/2535932
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/2535932
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/2535932
+      \endverb
+      \keyw{Data parallelism,parallel reduction,high-level synthesis,streaming,field-programmable gate arrays,scalability,behavioral synthesis,replication,task parallelism,throughput}
+    \endentry
+    \entry{an_energy_efficient_multitarget}{article}{}
+      \name{author}{7}{}{%
+        {{hash=9afff252e5698f4fcc15ae4ff9a1d6cc}{%
+           family={Knorst},
+           familyi={K\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ce96a6eb62dc0490c0a86aee6d4aa50e}{%
+           family={Costella\bibnamedelima Vicenzi},
+           familyi={C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Julio},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5010abb47d34a51acdafb266a811dc5f}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e8f482bcc4c66d89649df77093d64631}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=373f3c462d070d35fff8fb24ee75fd7d}{%
+           family={Korol},
+           familyi={K\bibinitperiod},
+           given={Guilherme},
+           giveni={G\bibinitperiod}}}%
+        {{hash=e056bec52ead1ef064c5d72364706d53}{%
+           family={Beck},
+           familyi={B\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7f0adf28a0bf4f30bbdc2e063b2d7952}{%
+           family={Rutzig},
+           familyi={R\bibinitperiod},
+           given={Mateus},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d16715d038ba901e0be96768ab1e4c24}
+      \strng{fullhash}{5f92749d4d0a91d7751078c23a162b32}
+      \strng{bibnamehash}{d16715d038ba901e0be96768ab1e4c24}
+      \strng{authorbibnamehash}{d16715d038ba901e0be96768ab1e4c24}
+      \strng{authornamehash}{d16715d038ba901e0be96768ab1e4c24}
+      \strng{authorfullhash}{5f92749d4d0a91d7751078c23a162b32}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Design Automation for Embedded Systems}
+      \field{month}{01}
+      \field{title}{An energy efficient multi-target binary translator for instruction and data level parallelism exploitation}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 28}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1007/s10617-021-09258-6
+      \endverb
+    \endentry
+    \entry{exploiting_longer_simd}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=875dd65c6f9e09afed1329060883fbcd}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Ding-Yong},
+           giveni={D\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=78db3f17b21963d6734da1ed7ffa7fb1}{%
+           family={Fu},
+           familyi={F\bibinitperiod},
+           given={Sheng-Yu},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=e33bb8cd99dc7969507ae3946c0f63b5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Yu-Ping},
+           giveni={Y\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=2584cfd5e0897bf21a8eb46c8d27306f}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jan-Jan},
+           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=59eff1482afbcb6d7e01d07362be6df7}{%
+           family={Hsu},
+           familyi={H\bibinitperiod},
+           given={Wei-Chung},
+           giveni={W\bibinithyphendelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cde18917071668da187054c4267bcc69}
+      \strng{fullhash}{7e329d85cc8b0a6782c076bc99c7a97d}
+      \strng{bibnamehash}{cde18917071668da187054c4267bcc69}
+      \strng{authorbibnamehash}{cde18917071668da187054c4267bcc69}
+      \strng{authornamehash}{cde18917071668da187054c4267bcc69}
+      \strng{authorfullhash}{7e329d85cc8b0a6782c076bc99c7a97d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE 22nd International Conference on Parallel and Distributed Systems (ICPADS)}
+      \field{title}{Exploiting Longer SIMD Lanes in Dynamic Binary Translation}
+      \field{year}{2016}
+      \field{pages}{853\bibrangedash 860}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICPADS.2016.0115
+      \endverb
+    \endentry
+    \entry{dynamic_revectorization}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=ab85a39ed2c46da20985c88c4b88e181}{%
+           family={Hallou},
+           familyi={H\bibinitperiod},
+           given={Nabil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=04efe14da3adfa3d6f6df2230b2ca108}{%
+           family={Rohou},
+           familyi={R\bibinitperiod},
+           given={Erven},
+           giveni={E\bibinitperiod}}}%
+        {{hash=0bf02b6618d58635bea7afad3b278b32}{%
+           family={Clauss},
+           familyi={C\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8cff7bb0417294ce52abcf24c3e6adc0}{%
+           family={Ketterlin},
+           familyi={K\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{227d57c36314abf82a3e2e2400292894}
+      \strng{fullhash}{e29fc7c2bafc0fd1b2663572d0c3f40c}
+      \strng{bibnamehash}{227d57c36314abf82a3e2e2400292894}
+      \strng{authorbibnamehash}{227d57c36314abf82a3e2e2400292894}
+      \strng{authornamehash}{227d57c36314abf82a3e2e2400292894}
+      \strng{authorfullhash}{e29fc7c2bafc0fd1b2663572d0c3f40c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS)}
+      \field{title}{Dynamic re-vectorization of binary code}
+      \field{year}{2015}
+      \field{pages}{228\bibrangedash 237}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/SAMOS.2015.7363680
+      \endverb
+    \endentry
+    \entry{boosting_simd}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=140ab86c04f7b14ce687393912b245e8}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Michael\bibnamedelima Guilherme},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=9afff252e5698f4fcc15ae4ff9a1d6cc}{%
+           family={Knorst},
+           familyi={K\bibinitperiod},
+           given={Tiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d643fea22febdae2f5c1c460d234ac58}{%
+           family={Vicenzi},
+           familyi={V\bibinitperiod},
+           given={Julio},
+           giveni={J\bibinitperiod}}}%
+        {{hash=27810a8c514e1efd061a8fe7f3d664f0}{%
+           family={Rutzig},
+           familyi={R\bibinitperiod},
+           given={Mateus\bibnamedelima Beck},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{dab1e83bdf657ce44d3c40ed0b28debd}
+      \strng{fullhash}{dc5cbbb7b34e7bfb06212164b3f515cf}
+      \strng{bibnamehash}{dab1e83bdf657ce44d3c40ed0b28debd}
+      \strng{authorbibnamehash}{dab1e83bdf657ce44d3c40ed0b28debd}
+      \strng{authornamehash}{dab1e83bdf657ce44d3c40ed0b28debd}
+      \strng{authorfullhash}{dc5cbbb7b34e7bfb06212164b3f515cf}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 Design, Automation Test in Europe Conference Exhibition (DATE)}
+      \field{title}{Boosting SIMD Benefits through a Run-time and Energy Efficient DLP Detection}
+      \field{year}{2019}
+      \field{pages}{722\bibrangedash 727}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.23919/DATE.2019.8714826
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
