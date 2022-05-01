@@ -140,7 +140,7 @@
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
 %\pagestyle{plain}
 
-\title{Data-level Parallelism Implementation and Optimization in Multiple Aspects on Binary Translation with Multi-processors}
+\title{Chia Proof of Space, Plotting, Accelerated by GPU}
 %%
 %% By default, the full list of authors will be used in the page
 %% headers. Often, this list is too long, and will overlap
@@ -153,9 +153,12 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  Recently, Apple Inc. published the novel M1 CPU based on ARM structure. This epoch-making product amazed the industry by its incredible performance and energy efficiency. Meanwhile, to resolve the cross-architectural problem between reduced instruction set computer (RISC) and complex instruction set computer (CISC), they proposed a binary translator that enabled software running on both RISC and CISC. However, the performance loss caused by binary translation is unavoidable. How to decrease the loss and accelerate the translation procedure grow their importance nowadays.
+  Recently, Blockchian has become a new popular terms and area people talk about. Not only does it has tons of innovative application in technology but also the impact it impose is also huge which will overturn the world that we live in. Decentralized is the key component that catch everyone's attention. Ranging from financial technology, semiconductor industry, entertainment industry and art collection, blockchain is providing a whole new architecture of protecting and contributing the system integrity and security at the same time. 
   
-  In case to facilitate binary translation, various techniques are revealed, e.g. dynamic binary translation (DBT), code cache, and extended single instruction multiple data (SIMD) exploitation. Among these strategies, data-level parallelism (DLP) plays a vital role on whether the compiler and machine can perfectly utilize data stream (including assembly sequences, basic blocks, fetched information from sliding window) while translation. For the sake that binary translation has strict restrictions to verify semantically equivalent, DLP is the most efficient method to enhance performance without enormous hardware adjustment. Hence, we will discuss about DLP implementation and optimization in various domains to achieve the improvement in binary translation.
+  Chia network, a new network utilizing the proof of space to verify the farmer for farming power, is a recent spotlight in blockchian forum which came live at June of 2021. The utilization of disk to contribute proof of power is not only innovative but also ecologically friendly. Compared with the most well-known cryptocurrency, bitcoin, the energy consume in chia network is 100 times less than the power required during bitcoin mining. 
+  
+  The motivation of my approach is to accelerate the process of chia farming, which is analogous to bitcoin mining, via a accerlation unit, a GPU computing node on super-computer. 
+
 \end{abstract}
 
 %%
@@ -216,48 +219,59 @@
 %% information and builds the first part of the formatted document.
 
 \section{Introduction}
+The key concept that blockchain was based on decentralized consensus is like a voting system where every node participating in the network could have equal contribution to the decision of the network with 
 
-Binary translation is the mechanic to address cross-architectural compatibility problems. Different architectures, e.g. ARM and Intel x86, have plenty of discrepancies in their assembly code. {\bf Fig. 1} exhibits the discrepancies of assembly code from an identical source code. The most advanced machine today still can not decode these two kinds of computers simultaneously. The main function of binary translation is to translate the binary code from the guest processor to the host processor without recompilation the source code. During the processing of binary translation, the engine could dynamically alter parallelism through instruction level or data level.
+what is proof of space? When a person owns a storage disk with 1 GB, the person can request to join the network by implementing the network protocol to claim and tell the network that he or she has a storage disk with 1 GB. How do we let the network know that you did actually hold a 1 GB storage space? In order to prove you have 1 GB space, we could simply give you a 1GB file and tell you to store the file on your disk. When we need a specific segment of information in the file, we request it from you, you should be able to pull out the exact same information.
+In order to store the useful information in the File that the network gave it to the farmer and create the proof of space of earn the rewards, three stages are required in the participating of Chia network: In the following chapters, we will discuss more in detail.
 
-Exploit DLP on binary translation not only leverages the translation completion, but also reduces the power consumption. To better reinforce the performance without substantial hardware adjustment, we focus our survey on the framework and algorithm optimizations. Sliding windows and code caches are universal strategies people dedicating to. These two additional frameworks augment the efficiency of translation. The fetched instructions are split into a plethora of basic blocks, which are viewed as a processing unit in sliding windows and code caches. The basic blocks are then stored in history tables and produces unique tags. Some papers propose to form basic blocks into pairs to better exploit spatial locality\parencite{neural_machine}. Once the repeated translation sequences happens, machine can fetch the instructions by tags and reduces the time searching pages in main memory. 
+Plotting -> Farming -> Verifying
+Consensus algorithm: VDF
+Timelord creating the challenge
+Farmer extracts the proof of space
 
-Algorithm optimizations can be achieved by weighted edge scheduling (WES)\parencite{weighted_edge_scheduling} or task arrangement (TA)\parencite{task_arrangement}. The data dependencies and number of tasks are first recorded through sliding windows as profiles. Afterwards, WES dynamically align the edges in a graph and assigns weights and dependencies on them based on profiles. The connections between edges are then calculated with optimal workload and performance. Task arrangement examines the time each data processing costs at first. Machine dynamically schedules the tasks to have the least execution time. 
 
-Besides these conventional improvement methods, techniques employing machine learning (ML) related algorithms will be introduced in our survey. They bring a prospective aspect dealing with binary translation although the results are not good enough to be implemented on industry products. Following their steps can we find some possible achievements that enables ML be applied on most binary translation issues.
+% \begin{figure}[ht]
+% \begin{center}
+% \includegraphics[height=3.75cm, width=9.5cm]{pic1.PNG}
+% \end{center}
+% {\footnotesize Fig. 1 ARM and x86 instructions are compiled through the same LLVM compiler. These two architecture apply totally different methods to have functionalized instructions. The discrepancies from the architectures make it difficult to validate the semantical equivalence after translation.}
+% \end{figure}
 
-Our survey firstly introduces the methods for information fetching before data processing. Details about data-level parallelism methods are discussed in section 3. Binary translation mechanics including both statically and dynamically are included in section 4. Our points of view are demonstrated in section 5. We propose some possible future works in the last part.
+\section{Chia network}
+Firstly, let's start with what is Chia network? Chia is a decentralized consensus network that uses the combination of Proof of Space and Proof of time (VDF) as the fundamental consensus algorithm. Two kinds of people are included in the network. The farmer, persons who provide the storage space, and the verifier, persons who request the information stored by farmer.
 
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[height=3.75cm, width=9.5cm]{pic1.PNG}
-\end{center}
-{\footnotesize Fig. 1 ARM and x86 instructions are compiled through the same LLVM compiler. These two architecture apply totally different methods to have functionalized instructions. The discrepancies from the architectures make it difficult to validate the semantical equivalence after translation.}
-\end{figure}
 
-\section{Information Fetching before Data Processing}
-There is a critical task before translation is to fetch the information about the assembly code and its following instructions.
 
-\textbf{Code Cache.} \parencite{code_cache_1} suggests an approach applying code caches to leverage the translation efficiency. It disassembles the assembly codes from guest machine into intermediate translation (IT) sequences. Then, putting IT sequences into the code caches to benefit following translations. Through memory flushing, this architecture enables recursive and bilateral translation between machines. In this fundamentals, \parencite{code_cache_with_fiber} proposes pipelining structure with fibers, which are mostly employed in the device I/Os. Fibers excel at continuously data fetching. This characteristic augments the reading speed between BT processing units and code caches. In addition, pipelining increases the throughput of codes while the bandwidth is enough.
+\section{Chia Plotting Process}
+The plotting process is when a farmer preperation work that the farmer has to completed before contributing to the network. The plotting process begins with storing many hash-like number in a file that stores on the farmer disk. Seven tables is initiate in the plot file with a specific plot constant k. 
 
-{\bf Sliding Window.} People typically utilize sliding window (SW) to record data dependencies and properties. \parencite{sliding_window_parallelism} identify three possible sliding window parallelism, inter-key, inter-window, and intra-window to enhance throughput. Inter-key and inter-window insert items into threads with replicas of key or window. Intra-window splits the items into small pieces and realigns them into threads, which best exploits the locality and balances the workload. Data accessed by SW can further compose a set of information named basic block\parencite{basic_block}. Some researchers further constitute basic blocks to vectors\parencite{vector_parallelism} and super-words\parencite{superword_parallelism} to implement parallelism on powerful computers. 
 
-{\bf Data Partitioning.} \parencite{data_partition} transfers basic block into profile. This profile is viewed as a standard for DLP operations. There are number of tasks estimates and cache fetching references recorded in the profile. Machine determines which data combines together for better performance according to the profile. For example, data x1 and data x2 fetch the same cache lines but they are not adjacent instructions. Machine will attempt to assign them together lest repeated cache fetching and reduce overhead. Except for performance improvement, profile strengthen the classification of semantical equivalence between guest and host codes. To validate whether the translation is successful is incredibly difficult because each computer structure has its own assembly logics. Profile provides the traceable table that verifies the correctness of translation procedure. 
+{\bf Plot constants k} The plot constants k represent the number of entries each table, which is determine by the farmer. The minumum disk space of the plot with $k = 32$ is 515.4 (GB) for temperarily storage and 104.7 (GB) for final storage. 
+\begin{align*}
+  \text{Number of entries in each table} = 2^{k}, 32 \leqq k \leqq 50 \\
+  \text{Temporarily plot file size} \approx 3.75 \times k \times 2^{k} (byte)
+  \text{Final plot file size } \approx 0.762 \times k \times 2^{k} (btye)
+\end{align*}
+{\bf Plot seed} The plot seed is a 32 byte constant received from the network to initialize each plot file, so that no two plot file will be the same. 
+\begin{align*}
+  \text{plot\_seed} \in [2^{256}]
+\end{align*}
+That is said, all the farmer need within the plotting process is the plot seed receiving online, everything else will be able to construct offline. The design of chia plotting process is intentionally design so that whomever gets a powerful machine, such as a ASIC or GPU won't create absolute advantage over those who don't, because the main motivation is letting the farmer purely use  The plotting process will be distinguish into the following four parts. \\
+{\bf 1. Forward propogation}
+The forward propogation is to insert data in each entries of the table, from table 1 to table 7. The dependency of the table is table i + 1 will relie on the talbe i (i = 0, 1, ... 6). Because this dependency, farmer who wish to accelerate the plotting process will not have the ability to predict what the next table content without waiting for the completion of the previous table. This will create a bottle-neck for those who wish to create a faster plotting method using a high performance machine. \\
+{\bf 2. Backward propogation}
+Backward propogation is to reduce the size of each table by getting rid of those entry that's not in use.\\
+{\bf 3. Compression}
+The compression stage is to sort the content in each table. \\
+{\bf 4. Checkpoint}
+Checkpoint will create a faster index for future proof retrieval. \\
 
-From above-mentioned papers, intra-window sliding window responsible for profiles alongside with pipelining code caches are the ideal strategy to provide necessary information for binary translation afterwards. However, bandwidth and timing are two vital problems. Without substantial hardware adjustment, original bandwidth is not capable of handling additional pipeline stages with fibers. Binary translation usually executes millions of sequences at a time. It is convincing that intra-window SW can produce enough profiles in a couple cycles. It costs significant time when encountering irregular instructions (non-common instructions). 
-
-There is the trade-off between real situations and ideal performance. In our opinion, intra-window sliding window with partial profile (without task estimates) is the most suitable solution in computers nowadays. Intra-window requires several cycles to rearrange itself and achieve significant improvement. Partial profile keeps the traceable tables and data dependencies, which still reinforces the validation of semantical equivalence. Pipelining intra-window SW is a possible method to accomplish, but it demands efforts to inspect the results.
-
-\section{Data-level Parallelism Strategies in multiple perspectives}
-After collecting necessary information, we can now start with data-level parallelism operations. Scheduling optimization related to DLP has two main domains, task arrangement (TA)\parencite{task_arrangement} and weighted edge scheduling (WES)\parencite{weighted_edge_scheduling}. 
-
-{\bf Scheduling Optimization.} Both TA and WES require profile (mentioned in section 3) to conduct following research. TA needs the execution time of each task and the current workload of processors. Machine dynamically schedule the tasks depending on the least execution time and workload. WES demands for data dependencies (relations between edges) and number of task estimates. Utilizing data dependencies reduces the overhead caused by cache fetching. Same as TA, WES decides which task works on which processor to balance the workload. {\bf Fig. 2} displays the final graph after WES. Processing elements (PE) have similar loading through dependency and number of tasks evaluation. 
-
-\begin{figure}[ht]
-\begin{center}
-\includegraphics[height=4.5cm, width=7cm]{pic2.PNG}
-\end{center}
-{\footnotesize Fig. 2 Number nearby the edges are the amount of tasks when executing this edge. The thickness of connections exhibit the dependencies. Edges have low dependencies but high workload will be assigned to relatively idle PE. By this strategy, each PE can work on roughly the same task number and execution time.}
-\end{figure}
+% \begin{figure}[ht]
+% \begin{center}
+% \includegraphics[height=4.5cm, width=7cm]{pic2.PNG}
+% \end{center}
+% {\footnotesize Fig. 2 Number nearby the edges are the amount of tasks when executing this edge. The thickness of connections exhibit the dependencies. Edges have low dependencies but high workload will be assigned to relatively idle PE. By this strategy, each PE can work on roughly the same task number and execution time.}
+% \end{figure}
 
 {\bf Adaptive DLP.} Except for scheduling optimization, \parencite{adaptive_dlp} proposes a method applying different DLP approaches in specific situations. Although this paper mainly focuses on the kernel utilization, we can treat binary translation processing elements as enormous kernels inside. Data partitioning can be done according to the properties of basic blocks. If the basic blocks are comprised of small items, machine tends to adopt kernel partitioning to fit with the instructions. In contrary, basic blocks with big items are appropriate for inter-kernel strategy. 
 
