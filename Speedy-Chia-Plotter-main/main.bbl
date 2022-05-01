@@ -136,64 +136,6 @@
       \endverb
       \keyw{Data parallelism,parallel reduction,high-level synthesis,streaming,field-programmable gate arrays,scalability,behavioral synthesis,replication,task parallelism,throughput}
     \endentry
-    \entry{an_energy_efficient_multitarget}{article}{}
-      \name{author}{7}{}{%
-        {{hash=9afff252e5698f4fcc15ae4ff9a1d6cc}{%
-           family={Knorst},
-           familyi={K\bibinitperiod},
-           given={Tiago},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ce96a6eb62dc0490c0a86aee6d4aa50e}{%
-           family={Costella\bibnamedelima Vicenzi},
-           familyi={C\bibinitperiod\bibinitdelim V\bibinitperiod},
-           given={Julio},
-           giveni={J\bibinitperiod}}}%
-        {{hash=5010abb47d34a51acdafb266a811dc5f}{%
-           family={Jordan},
-           familyi={J\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod}}}%
-        {{hash=e8f482bcc4c66d89649df77093d64631}{%
-           family={Almeida},
-           familyi={A\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=373f3c462d070d35fff8fb24ee75fd7d}{%
-           family={Korol},
-           familyi={K\bibinitperiod},
-           given={Guilherme},
-           giveni={G\bibinitperiod}}}%
-        {{hash=e056bec52ead1ef064c5d72364706d53}{%
-           family={Beck},
-           familyi={B\bibinitperiod},
-           given={Antonio},
-           giveni={A\bibinitperiod}}}%
-        {{hash=7f0adf28a0bf4f30bbdc2e063b2d7952}{%
-           family={Rutzig},
-           familyi={R\bibinitperiod},
-           given={Mateus},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{d16715d038ba901e0be96768ab1e4c24}
-      \strng{fullhash}{5f92749d4d0a91d7751078c23a162b32}
-      \strng{bibnamehash}{d16715d038ba901e0be96768ab1e4c24}
-      \strng{authorbibnamehash}{d16715d038ba901e0be96768ab1e4c24}
-      \strng{authornamehash}{d16715d038ba901e0be96768ab1e4c24}
-      \strng{authorfullhash}{5f92749d4d0a91d7751078c23a162b32}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Design Automation for Embedded Systems}
-      \field{month}{01}
-      \field{title}{An energy efficient multi-target binary translator for instruction and data level parallelism exploitation}
-      \field{year}{2022}
-      \field{pages}{1\bibrangedash 28}
-      \range{pages}{28}
-      \verb{doi}
-      \verb 10.1007/s10617-021-09258-6
-      \endverb
-    \endentry
     \entry{exploiting_longer_simd}{inproceedings}{}
       \name{author}{5}{}{%
         {{hash=875dd65c6f9e09afed1329060883fbcd}{%
@@ -228,8 +170,8 @@
       \strng{authorbibnamehash}{cde18917071668da187054c4267bcc69}
       \strng{authornamehash}{cde18917071668da187054c4267bcc69}
       \strng{authorfullhash}{7e329d85cc8b0a6782c076bc99c7a97d}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2016 IEEE 22nd International Conference on Parallel and Distributed Systems (ICPADS)}
@@ -241,150 +183,70 @@
       \verb 10.1109/ICPADS.2016.0115
       \endverb
     \endentry
-    \entry{dynamic_revectorization}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=ab85a39ed2c46da20985c88c4b88e181}{%
-           family={Hallou},
-           familyi={H\bibinitperiod},
-           given={Nabil},
-           giveni={N\bibinitperiod}}}%
-        {{hash=04efe14da3adfa3d6f6df2230b2ca108}{%
-           family={Rohou},
-           familyi={R\bibinitperiod},
-           given={Erven},
-           giveni={E\bibinitperiod}}}%
-        {{hash=0bf02b6618d58635bea7afad3b278b32}{%
-           family={Clauss},
-           familyi={C\bibinitperiod},
-           given={Philippe},
-           giveni={P\bibinitperiod}}}%
-        {{hash=8cff7bb0417294ce52abcf24c3e6adc0}{%
-           family={Ketterlin},
-           familyi={K\bibinitperiod},
-           given={Alain},
-           giveni={A\bibinitperiod}}}%
+    \entry{mad_chia_plotter}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=f6416cd4af7f0809c703a4549a15b6b3}{%
+           family={madMAx43v3r},
+           familyi={m\bibinitperiod},
+           given={Max\bibnamedelima -},
+           giveni={M\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinitperiod}}}%
       }
-      \strng{namehash}{227d57c36314abf82a3e2e2400292894}
-      \strng{fullhash}{e29fc7c2bafc0fd1b2663572d0c3f40c}
-      \strng{bibnamehash}{227d57c36314abf82a3e2e2400292894}
-      \strng{authorbibnamehash}{227d57c36314abf82a3e2e2400292894}
-      \strng{authornamehash}{227d57c36314abf82a3e2e2400292894}
-      \strng{authorfullhash}{e29fc7c2bafc0fd1b2663572d0c3f40c}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \strng{namehash}{f6416cd4af7f0809c703a4549a15b6b3}
+      \strng{fullhash}{f6416cd4af7f0809c703a4549a15b6b3}
+      \strng{bibnamehash}{f6416cd4af7f0809c703a4549a15b6b3}
+      \strng{authorbibnamehash}{f6416cd4af7f0809c703a4549a15b6b3}
+      \strng{authornamehash}{f6416cd4af7f0809c703a4549a15b6b3}
+      \strng{authorfullhash}{f6416cd4af7f0809c703a4549a15b6b3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2015 International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS)}
-      \field{title}{Dynamic re-vectorization of binary code}
-      \field{year}{2015}
-      \field{pages}{228\bibrangedash 237}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/SAMOS.2015.7363680
-      \endverb
-    \endentry
-    \entry{boosting_simd}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=140ab86c04f7b14ce687393912b245e8}{%
-           family={Jordan},
-           familyi={J\bibinitperiod},
-           given={Michael\bibnamedelima Guilherme},
-           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=9afff252e5698f4fcc15ae4ff9a1d6cc}{%
-           family={Knorst},
-           familyi={K\bibinitperiod},
-           given={Tiago},
-           giveni={T\bibinitperiod}}}%
-        {{hash=d643fea22febdae2f5c1c460d234ac58}{%
-           family={Vicenzi},
-           familyi={V\bibinitperiod},
-           given={Julio},
-           giveni={J\bibinitperiod}}}%
-        {{hash=27810a8c514e1efd061a8fe7f3d664f0}{%
-           family={Rutzig},
-           familyi={R\bibinitperiod},
-           given={Mateus\bibnamedelima Beck},
-           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
-      }
-      \strng{namehash}{dab1e83bdf657ce44d3c40ed0b28debd}
-      \strng{fullhash}{dc5cbbb7b34e7bfb06212164b3f515cf}
-      \strng{bibnamehash}{dab1e83bdf657ce44d3c40ed0b28debd}
-      \strng{authorbibnamehash}{dab1e83bdf657ce44d3c40ed0b28debd}
-      \strng{authornamehash}{dab1e83bdf657ce44d3c40ed0b28debd}
-      \strng{authorfullhash}{dc5cbbb7b34e7bfb06212164b3f515cf}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2019 Design, Automation Test in Europe Conference Exhibition (DATE)}
-      \field{title}{Boosting SIMD Benefits through a Run-time and Energy Efficient DLP Detection}
-      \field{year}{2019}
-      \field{pages}{722\bibrangedash 727}
-      \range{pages}{6}
-      \verb{doi}
-      \verb 10.23919/DATE.2019.8714826
-      \endverb
-    \endentry
-    \entry{neural_machine}{article}{}
-      \name{author}{6}{}{%
-        {{hash=4e48a837c5836ea21da959809f23f615}{%
-           family={Zuo},
-           familyi={Z\bibinitperiod},
-           given={Fei},
-           giveni={F\bibinitperiod}}}%
-        {{hash=454b205decd85572e544b67661174894}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Xiaopeng},
-           giveni={X\bibinitperiod}}}%
-        {{hash=8d522ec7ae512686a2c4dba6f7a6c724}{%
-           family={Young},
-           familyi={Y\bibinitperiod},
-           given={Patrick},
-           giveni={P\bibinitperiod}}}%
-        {{hash=fc34152f7103daa992d04e2b145480ed}{%
-           family={Luo},
-           familyi={L\bibinitperiod},
-           given={Lannan},
-           giveni={L\bibinitperiod}}}%
-        {{hash=cbc415fc36c599555cb13b0e962f1c25}{%
-           family={Zeng},
-           familyi={Z\bibinitperiod},
-           given={Qiang},
-           giveni={Q\bibinitperiod}}}%
-        {{hash=1f8789f570d89e9a8303c21f6d9b7a1e}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Zhexin},
-           giveni={Z\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Internet Society}%
-      }
-      \strng{namehash}{4e7a4c904a9002dd9928f3aaa5479da5}
-      \strng{fullhash}{c404d7678eea13698e1296fdf20e14cd}
-      \strng{bibnamehash}{4e7a4c904a9002dd9928f3aaa5479da5}
-      \strng{authorbibnamehash}{4e7a4c904a9002dd9928f3aaa5479da5}
-      \strng{authornamehash}{4e7a4c904a9002dd9928f3aaa5479da5}
-      \strng{authorfullhash}{c404d7678eea13698e1296fdf20e14cd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Proceedings 2019 Network and Distributed System Security Symposium}
-      \field{title}{Neural Machine Translation Inspired Binary Code Similarity Comparison beyond Function Pairs}
-      \field{year}{2019}
-      \verb{doi}
-      \verb 10.14722/ndss.2019.23492
-      \endverb
+      \field{howpublished}{Github}
+      \field{title}{Chia Plotter}
       \verb{urlraw}
-      \verb http://dx.doi.org/10.14722/ndss.2019.23492
+      \verb https://github.com/madMAx43v3r/chia-plotter.git
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.14722/ndss.2019.23492
+      \verb https://github.com/madMAx43v3r/chia-plotter.git
       \endverb
     \endentry
+    \entry{2_vdf}{article}{}
+      \name{author}{3}{}{%
+        {{hash=9ef331cc9e5b527723547dfa1becd8cf}{%
+           family={Boneh},
+           familyi={B\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=188658a4b692b633b6c2576bc1fac67e}{%
+           family={Bünz},
+           familyi={B\bibinitperiod},
+           given={Benedikt},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c2b2011398601d7230a650909b95a02e}{%
+           family={Fisch},
+           familyi={F\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{9780729c0a3cd2ac84c7e3809c494521}
+      \strng{fullhash}{9780729c0a3cd2ac84c7e3809c494521}
+      \strng{bibnamehash}{9780729c0a3cd2ac84c7e3809c494521}
+      \strng{authorbibnamehash}{9780729c0a3cd2ac84c7e3809c494521}
+      \strng{authornamehash}{9780729c0a3cd2ac84c7e3809c494521}
+      \strng{authorfullhash}{9780729c0a3cd2ac84c7e3809c494521}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IACR Cryptol. ePrint Arch.}
+      \field{title}{A Survey of Two Verifiable Delay Functions}
+      \field{volume}{2018}
+      \field{year}{2018}
+      \field{pages}{712}
+      \range{pages}{1}
+    \endentry
   \enddatalist
+  \missing{chia_github_source}
 \endrefsection
 \endinput
 

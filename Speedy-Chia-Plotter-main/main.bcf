@@ -2347,16 +2347,10 @@
     <bcf:citekey order="1">adaptive_dlp</bcf:citekey>
     <bcf:citekey order="2">dlp_in_streaming</bcf:citekey>
     <bcf:citekey order="3">adaptive_dlp</bcf:citekey>
-    <bcf:citekey order="4">an_energy_efficient_multitarget</bcf:citekey>
-    <bcf:citekey order="5">exploiting_longer_simd</bcf:citekey>
-    <bcf:citekey order="6">exploiting_longer_simd</bcf:citekey>
-    <bcf:citekey order="7">an_energy_efficient_multitarget</bcf:citekey>
-    <bcf:citekey order="8">exploiting_longer_simd</bcf:citekey>
-    <bcf:citekey order="9">an_energy_efficient_multitarget</bcf:citekey>
-    <bcf:citekey order="10">dynamic_revectorization</bcf:citekey>
-    <bcf:citekey order="11">boosting_simd</bcf:citekey>
-    <bcf:citekey order="12">dynamic_revectorization</bcf:citekey>
-    <bcf:citekey order="13">neural_machine</bcf:citekey>
+    <bcf:citekey order="4">exploiting_longer_simd</bcf:citekey>
+    <bcf:citekey order="5">mad_chia_plotter</bcf:citekey>
+    <bcf:citekey order="6">chia_github_source</bcf:citekey>
+    <bcf:citekey order="7">2_vdf</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

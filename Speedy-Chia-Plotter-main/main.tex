@@ -140,7 +140,7 @@
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
 %\pagestyle{plain}
 
-\title{Chia Proof of Space, Plotting, Accelerated by GPU}
+\title{Chia Network and Proof of Space Acceleration by GPU}
 %%
 %% By default, the full list of authors will be used in the page
 %% headers. Often, this list is too long, and will overlap
@@ -219,6 +219,14 @@
 %% information and builds the first part of the formatted document.
 
 \section{Introduction}
+%% Bitcoin
+
+
+
+%% Chia coin
+Developed by the founder of bittorrent, Cohn Bram. Seek to improve the energy wasted in the Bitcoin mining. 
+
+
 The key concept that blockchain was based on decentralized consensus is like a voting system where every node participating in the network could have equal contribution to the decision of the network with 
 
 what is proof of space? When a person owns a storage disk with 1 GB, the person can request to join the network by implementing the network protocol to claim and tell the network that he or she has a storage disk with 1 GB. How do we let the network know that you did actually hold a 1 GB storage space? In order to prove you have 1 GB space, we could simply give you a 1GB file and tell you to store the file on your disk. When we need a specific segment of information in the file, we request it from you, you should be able to pull out the exact same information.
@@ -266,6 +274,11 @@ The compression stage is to sort the content in each table. \\
 {\bf 4. Checkpoint}
 Checkpoint will create a faster index for future proof retrieval. \\
 
+
+{\bf Chacha8 and Blake3 hash-like function}
+The fundamental of chia plot generation is based on two hash functions, chacha8 and blake3, where chacha8 is used in the gerneration of the first table and blake3 is used in generation of the rest 6 tables. 
+{\bf Table 1}
+The generation of the table 1 required iteration through the entire entries with value up to $2^{k} - 1$.
 % \begin{figure}[ht]
 % \begin{center}
 % \includegraphics[height=4.5cm, width=7cm]{pic2.PNG}
@@ -282,40 +295,32 @@ With the support of SIMD engine, such as ARM NEON and Intel AVX, the main proces
 
 Previously-mentioned methods are seemingly solutions to deal with assembly sequences. Machine should pay extra cycles to complete their preliminary works. This cause them not capable of universally adopted. In spite that there are approaches available to address the loss in translation, they do not have a in-depth research throughout the whole computer architecture. Current papers simulate the data stream without taking penalty and exceptions into account. They have deficiency though, we can still figure out more and more possibilities following their directions. Notable advances will be made if the algorithm of DLP is optimized and avoid exceptional hardware efforts.
 
-\section{Mechanics while Executing Binary Translation}
-{\bf Binary Translation Improvement.} A Hybrid Multi-Target Binary Translator (HMTBT) was presented in \parencite{an_energy_efficient_multitarget} proposing the architecture of dynamically selecting the best performance before executing the Instruction-level Parallelism (ILP) engine or Data-level Parallelism (DLP) engine on the chosen target accelerator would create the adaptable solution for different application. ILP is exploited by using a CGRA engine through the process of (A) Dependency Analysis (B) Mapping (C) Configuration Build. DLP is exploited using the ARM NEON engine to operate the process of the binary translation on loop detection process when the iteration is unknown during compile time. After the ILP and DLP optimization of the code region (Mutual Regions), a dispather will receive CGRA configuration and SIMD instruction to decide which acceleration is dispatched in the Translation Cache. In addition, a History Table is used to stored the optimized code region for future use. 
-
+\section{Approach with Parallel Computing}
+% Nvidia GPU why do you think GPU could assist the plotting process
+{\bf Nvidia GPU} 
 In \parencite{exploiting_longer_simd}, researcher also proposes a dynamic SIMD Assembler (DSA) generating the SIMD instruction to trigger the ARM NEON engine by detecting the vectorized code regions. The need of the DSA to detect the vectorized loop run-time is to compensated the weakness of the ARM auto-vectorization compiler count loop detection at compile time. Such condition as dynamic range loop, conditional loop and loop with a function call are three condition that the compiler couldn't possibly has optimized; thus, it will required the assistance from the run-time engine to parallelize the execution. 
+% Address the memory limitation device memory: 32 MB
+However, the two memory space is reside in the GPU model, the host memory and device memory. In order to invoke 
+{\bf Related Work by Max}
+One of the contributor of the open source project, XPM GPU Miner, \parencite[]{mad_chia_plotter}, has successfully provide highly parallelize archtecture to support more efficient parallel computing to accelerate chia plotting by creating multiple threads on a multi-core processor. The methods he use is create a thread pool manager on the plotting thread in order to synchronize the status of each thread. However, the API he provide is not thread-safe api. Therefore, with the motivation of the ability to parallelize the plotting into each
+{\bf Software architecture}
+The main 
+Inherited from the source code repositories, I add a threading queue in front of GPU kernel function. Memory copying from host to device side is costly, and the approach is to copy data together to the kernel device at once to reduce the cost of issuing memory copy seperatly. The queue will collect data derived and iterated from the table 1 function and issue to the kernel when the queue is collecting enough data for GPU to calculate at the same working cycle. 
+%% Architecture figure to assist the explanation
 
-Combining the result in \parencite{exploiting_longer_simd} and \parencite{an_energy_efficient_multitarget} both utilizing ARM NEON DLP engine to accomplish DLP, we could see that NEON couldn't have became effective without the co-existence of CGRA ILP engine. The effect of ARM NEON is only limited to certain scanerio and the performance enhancement is not as outstanding than the CGRA engine along. The CGRA engine could have operated in certain scenario with certain amount of optimization, but with the help of ARM NEON, the result could reach optimal in most of the scenario. That is to say, the combination of both of the ILP and DLP could create an effect better than both operates individually combined. 
+% synchronize issue among different thread
+Regarding the synchronize issue among all different thread, no mutex is requird for the generation of the 1st table. The generation 
 
-Different from \parencite{exploiting_longer_simd} and \parencite{an_energy_efficient_multitarget}, \parencite{dynamic_revectorization} proposed the binary translation between the AVX ISA, with 256-bit register wide, and the x86 SSE ISA, with 128-bit register wide, could become beneficial to software developer by eliminating the migration effort from older architecture to newer architecture. The paper proposed to use the static loop detection mechanism at compile time to translate the ISA to a lower-cost processor which create a future opportunity for software programmer to effortlessly migrate the old version application to the new version architecture when the technology would have dramatically improved.
 
-An additional case has been taken into account when the loop exist the loop-carried dependency stating that such dependency will limit the parallelism factor for the program. Consider the following case
-\begin{verbatim}
-  for (i = 0; i < 400;i++)
-    a[i+4] = a[i] + 2;
-\end{verbatim}
-The dependency will limit the maximum parallelism to a factor of 4 only. 
-
-{\bf Power Efficiency.} Not only could we see that the the speed-up from exploiting DLP has outstanding effect but also energy saving has been reduced enormously especially with the highly data-dependent application in the \parencite{boosting_simd}. Those research \parencite{dynamic_revectorization} which use static compiler analyzer to exploit DLP has not expressed their advantage over the energy consumption. Therefore, our survey is concluded that run-time dynamic binary translator could have a huge advantage on saving energy consumption. 
-
-{\bf Machine Learning Applications.} Most binary translations are manually manipulated, including parameters, validation, and inspection. \parencite{neural_machine} demonstrates a novel perspective of binary translation that operating under unsupervised machine learning. Training and testing dataset is formed the same compiler. Input the dataset to recurrent neural network (RNN), which is universally used for natural language processing (NLP). After a couple training procedure, machine can determine the targeted assembly code at the accuracy of 95\%. The performance is said to be enhanced if utilizing more powerful neural networks, e.g. long short-term memory (LSTM). Nevertheless, problems accompany with novel ideas. How to verify the semantical equivalence between two structures and how to compile useful dataset for training are two major concerns. We can imagine that the performance of binary translation will be significantly improved once the proper solution is proposed. It is a promising lecture that we can try to conquer. 
-
-We have presented the role of binary translator in different scenario ranging from the dynamically SIMD assembler, static loop detection mechanism and several application. The importance of binary translator in data-level parallelism is indispensable. 
 
 \section{Conclusions}
-After evaluating the enhancements and implementation difficulties, we propose our view of possible solutions on this topic. Intra-window with partial profile provides enough information for machine to execute DLP operations. Dynamic scheduling is able to utilize the partial profile with data dependencies and balance the workload between processors. Lastly employs HMTBT to pursue significant translation performance. Integrating these three novel approaches into a whole machine requires huge efforts. We believe this concept could be a prospective direction to forward researches.
+After evaluating the enhancements and implementation difficulties, we propose our view of possible solutions on this topic. Programming GPU plotter has the concurrency issue that we have taken serious handle. 
 
 Our survey shows that DLP assists the system performance either in aspect of energy or speedup perspective. Considering computer structure limitations in overall could we find the best architecture to our targeted design. We aim to fulfill a DLP optimization with more practical constraints, e.g. memory dependencies, cold start overhead, data stream in reality with the proposed solutions. By doing so, unexpected conditions have a chance to be addressed.
 Probably, novel methods will be realized while we address them. 
-
-\section{Appendix}
-\noindent Below is Authors and contributions
-
-\noindent {\bf Chun-Sheng Wu}: Beforehand Information Fetching, Data Partitioning Strategy, Kernel Partitioning Strategy, Scheduling Optimization, Adaptive DLP and Machine Learning Algorithm (RNN).
-
-\noindent {\bf Ting-Wei Su:} Binary Translation Optimization, Dynamic Binary Translation, SIMD Optimization.
+\parencite{chia_github_source}
+\parencite{2_vdf}
+\section{Future Work}
 
 \section{Reference}
 \printbibliography[heading=none]
