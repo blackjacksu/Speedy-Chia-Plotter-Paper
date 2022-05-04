@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  1 MAY 2022 17:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.27)  3 MAY 2022 21:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1003,39 +1003,31 @@ Package: blx-case-expl3 2020/12/31 v3.16 expl3 case changing code for biblatex
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (/Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/main.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                chia_github_source
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+ (/Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/main.bbl)
 Package biblatex Info: Reference section=0 on input line 101.
 Package biblatex Info: Reference segment=0 on input line 101.
  Excluding 'comment' comment.
 Class acmart Info: Suppressing bibformat on input line 139.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 168.
-LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 168.
+(Font)              scaled to size 17.28pt on input line 165.
+LaTeX Font Info:    Trying to load font information for T1+LinuxBiolinumT-TLF on input line 165.
  (/usr/local/texlive/2021/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
 File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/LinuxBiolinumT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 168.
+(Font)              scaled to size 17.28pt on input line 165.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxBiolinumT-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 168.
+(Font)              scaled to size 17.28pt on input line 165.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 168.
+(Font)              scaled to size 12.0pt on input line 165.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 168.
+(Font)              scaled to size 10.0pt on input line 165.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 168.
+(Font)              scaled to size 10.0pt on input line 165.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
@@ -1046,68 +1038,131 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 168.
+(Font)              scaled to size 9.0pt on input line 165.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 168.
+(Font)              scaled to size 10.95pt on input line 165.
  Excluding 'comment' comment.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 257.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 262.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 262.
+Underfull \hbox (badness 10000) in paragraph at lines 219--224
 
-Overfull \hbox (85.39333pt too wide) detected at line 262
+ []
+
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 250.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 7.3pt on input line 252.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.5pt on input line 252.
+
+Overfull \hbox (18.88855pt too wide) detected at line 252
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--276
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1.1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+LaTeX Font Info:    Trying to load font information for T1+zi4 on input line 255.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
+)
+LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
+(Font)              scaled to size 9.0pt on input line 255.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `zi4' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 279--289
 
  []
 
-[1.1{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+<Speedy_Chia_Threading.png, id=56, 487.8225pt x 435.42674pt>
+File: Speedy_Chia_Threading.png Graphic file (type png)
+<use Speedy_Chia_Threading.png>
+Package pdftex.def Info: Speedy_Chia_Threading.png  used on input line 297.
+(pdftex.def)             Requested size: 199.16739pt x 128.03784pt.
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Class acmart Warning: A possible image without description on input line 300.
 
+<Chia_Plot_Process.jpeg, id=57, 942.52126pt x 683.55376pt>
+File: Chia_Plot_Process.jpeg Graphic file (type jpg)
+<use Chia_Plot_Process.jpeg>
+Package pdftex.def Info: Chia_Plot_Process.jpeg  used on input line 304.
+(pdftex.def)             Requested size: 455.25264pt x 241.84451pt.
+
+Class acmart Warning: A possible image without description on input line 307.
+
+LaTeX Font Info:    Trying to load font information for TS1+LinuxLibertineT-TLF on input line 312.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/libertine/TS1LinuxLibertineT-TLF.fd
+File: TS1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for TS1/LinuxLibertineT-TLF.
+)
+LaTeX Font Info:    Font shape `TS1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 312.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `LinuxLibertineT-TLF' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 9.0pt on input line 313.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
+(Font)              scaled to size 7.0pt on input line 313.
+ [2.2 </Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/Speedy_Chia_Threading.png>]
+Overfull \hbox (5.24953pt too wide) detected at line 316
+[]
+ []
+
+<Chia_GPU_architecture.png, id=76, 392.96812pt x 248.42813pt>
+File: Chia_GPU_architecture.png Graphic file (type png)
+<use Chia_GPU_architecture.png>
+Package pdftex.def Info: Chia_GPU_architecture.png  used on input line 323.
+(pdftex.def)             Requested size: 199.17586pt x 128.03857pt.
+
+Class acmart Warning: A possible image without description on input line 326.
+
+[3.3 </Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/Chia_Plot_Process.jpeg> </Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/Chia_GPU_architecture.png>]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 326.
+(Font)              scaled to size 9.0pt on input line 367.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 326.
- Excluding 'comment' comment. (/usr/local/texlive/2021/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
+(Font)              scaled to size 9.0pt on input line 367.
+
+Overfull \hbox (28.00233pt too wide) in paragraph at lines 367--367
+\T1/LinuxLibertineT-TLF/m/n/9 (-20) github . com / computer -[] whisperer / 42b8507b2fb506faf0b1c9ee1189cd58$[]. 
+ []
+
+Excluding 'comment' comment. (/usr/local/texlive/2021/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 ) (/usr/local/texlive/2021/texmf-dist/tex/generic/stringenc/se-utf8.def
 File: se-utf8.def 2019/11/29 v1.12 stringenc: UTF-8
 )
 
+Class acmart Warning: Some images may lack descriptions.
+
+
 Package balance Warning: You have called \balance in second column
 (balance)                Columns might not be balanced.
 
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 857.
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 857.
-[2.2] (/Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/main.aux)
+[4.4] (/Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C9317482479DBD4CA97553D294EB5A97;1037.
+(rerunfilecheck)             Checksum: BCEAFB592001DBCAE52F928EE6A09560;1322.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26754 strings out of 478994
- 446351 string characters out of 5858183
- 1227634 words of memory out of 5000000
- 43333 multiletter control sequences out of 15000+600000
- 525533 words of font info for 261 fonts, out of 8000000 for 9000
+ 26880 strings out of 478994
+ 449232 string characters out of 5858183
+ 1227641 words of memory out of 5000000
+ 43393 multiletter control sequences out of 15000+600000
+ 530304 words of font info for 290 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 96i,11n,131p,1523b,1651s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on /Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/main.pdf (2 pages, 393946 bytes).
+ 96i,12n,131p,1514b,1653s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_ncsllp.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_7grukw.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_naooyc.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-4.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_oexx6f.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/LibertineMathMI7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
+Output written on /Users/willysu/Desktop/researching/GitHub/Speedy-Chia-Plotter-Paper/Speedy-Chia-Plotter-main/main.pdf (4 pages, 529507 bytes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 59473 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
+ 68208 words of extra memory for PDF output out of 74296 (max. 10000000)
 

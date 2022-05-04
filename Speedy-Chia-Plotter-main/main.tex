@@ -128,7 +128,7 @@
 }
 \end{comment}
 
-\author{Ting-Wei SU}
+\author{Ting-Wei Su}
 \affiliation{%
   \institution{Texas A\&M University}
   \city{College Station}
@@ -140,7 +140,7 @@
 \renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
 %\pagestyle{plain}
 
-\title{Chia Network and Proof of Space Acceleration by GPU}
+\title{Chia Network and Accelerated Plotter}
 %%
 %% By default, the full list of authors will be used in the page
 %% headers. Often, this list is too long, and will overlap
@@ -153,11 +153,8 @@
 %% The abstract is a short summary of the work to be presented in the
 %% article.
 \begin{abstract}
-  Recently, Blockchian has become a new popular terms and area people talk about. Not only does it has tons of innovative application in technology but also the impact it impose is also huge which will overturn the world that we live in. Decentralized is the key component that catch everyone's attention. Ranging from financial technology, semiconductor industry, entertainment industry and art collection, blockchain is providing a whole new architecture of protecting and contributing the system integrity and security at the same time. 
+  Chia network, a new decentralized network utilizing the proof of space and verified delay function is a recent spotlight in blockchian which came live around May of 2021. The utilization of disk to contribute proof of space is not only innovative but also ecologically friendly. Compared with the most well-known cryptocurrency, bitcoin, the energy consume in chia network is extremely less than the power required during bitcoin mining. 
   
-  Chia network, a new network utilizing the proof of space to verify the farmer for farming power, is a recent spotlight in blockchian forum which came live at June of 2021. The utilization of disk to contribute proof of power is not only innovative but also ecologically friendly. Compared with the most well-known cryptocurrency, bitcoin, the energy consume in chia network is 100 times less than the power required during bitcoin mining. 
-  
-  The motivation of my approach is to accelerate the process of chia farming, which is analogous to bitcoin mining, via a accerlation unit, a GPU computing node on super-computer. 
 
 \end{abstract}
 
@@ -219,23 +216,11 @@
 %% information and builds the first part of the formatted document.
 
 \section{Introduction}
+Recently, Blockchian has become a new popular terms and area people talk about. Not only does it has tons of innovative application in technology but also the impact it impose is also huge which will overturn the world that we live in. Decentralized is the key component that catch everyone's attention. Ranging from financial technology, semiconductor industry, entertainment industry and art collection, blockchain is providing a whole new architecture of protecting and contributing the system integrity and security at the same time. The key concept that blockchain was based on decentralized consensus is like a voting system where every node participating in the network could have equal contribution to the decision of the network. \\
 %% Bitcoin
-
-
-
-%% Chia coin
-Developed by the founder of bittorrent, Cohn Bram. Seek to improve the energy wasted in the Bitcoin mining. 
-
-
-The key concept that blockchain was based on decentralized consensus is like a voting system where every node participating in the network could have equal contribution to the decision of the network with 
-
-what is proof of space? When a person owns a storage disk with 1 GB, the person can request to join the network by implementing the network protocol to claim and tell the network that he or she has a storage disk with 1 GB. How do we let the network know that you did actually hold a 1 GB storage space? In order to prove you have 1 GB space, we could simply give you a 1GB file and tell you to store the file on your disk. When we need a specific segment of information in the file, we request it from you, you should be able to pull out the exact same information.
-In order to store the useful information in the File that the network gave it to the farmer and create the proof of space of earn the rewards, three stages are required in the participating of Chia network: In the following chapters, we will discuss more in detail.
-
-Plotting -> Farming -> Verifying
-Consensus algorithm: VDF
-Timelord creating the challenge
-Farmer extracts the proof of space
+Bitcoin, as the most famous cryptocurrency, has been making a huge impact to the blockchain society and the whole world. Different kind of consensus theory has been proposed ever since the launch of bitcoin. As the first truly decentralized cryptocurrency, Bitcoin launched at 2008, invented by the mistyrious anonymous founder Satoshi Nakamoto, is not only the forerunner but the motivation to any application in the blockchain expertise. \\
+Etherrum, intially started with a more robust scripting language a Turing-complete programming language, was a improvement to bitcoin core algorithm. Not only does it slight tune the 21 million limitation of Bitcoin but the extension on decentralized contract system has triggered many different application accross financial technology and art exhibition. With the recent migration of the original consensus protocol, proof of work, to a more stable protocol, proof of stake, Ethereum is constantly become a better network in all aspect than its predecesor, Bitcoin. 
+Proof of space is noval consensus protocol that was proposed recently since 2017. Chia network is one of network that utilize the proof of space consensus theory  \\
 
 
 % \begin{figure}[ht]
@@ -246,82 +231,138 @@ Farmer extracts the proof of space
 % \end{figure}
 
 \section{Chia network}
-Firstly, let's start with what is Chia network? Chia is a decentralized consensus network that uses the combination of Proof of Space and Proof of time (VDF) as the fundamental consensus algorithm. Two kinds of people are included in the network. The farmer, persons who provide the storage space, and the verifier, persons who request the information stored by farmer.
+%% Chia coin
+Chia was founded in May 2021 by Bram Cohen, who was known for the peer-to-peer file-sharing internet protocol, BitTorrent. The intention of building the chia decentralized network is to improve the energy consumption spend on Bitcoin mining by utilizing a new consensus, proof of space, as the fundamental of the network. \\
+Chia is a decentralized consensus network that uses the combination of Proof of Space and Proof of time (VDF) as the fundamental consensus algorithm. \\
+When a person owns a storage disk with 1 GB, the person can request to join the network by implementing the network protocol to claim and tell the network that he or she has a storage disk with 1 GB. How do we let the network know that you did actually hold a 1 GB storage space? In order to prove you have 1 GB space, we could simply give you a 1GB file and tell you to store the file on your disk. When we need a specific segment of information in the file, we request it from you, you should be able to pull out the exact same information. \\
+In order to store the user information in the File that the network gave to the farmer and create the proof of space of earning the rewards, three stages are required in the participation of Chia network: In the following chapters, we will discuss more in detail.
+Chia network is composed of three roles, timelord, farmer, and verifier. Whenever timelord releases the lottery, a sub-plot, to the network every ten minutes, farmers who have a completed plot file will construct a proof of space from the plot file they store and send the proof of space to the verifier to verify. When the verifier verifies that the exact proof of space corresponds to a sub-slot, the rewards will go to the selected farmer. The reward for successfully finding the valid proof of space is 2 XCH. Why the block generation rate is 10 mins per block\\
+Three steps have to be completed before winning the rewards. \\ 
+{\bf Plotting}
+Plotting will store a huge amount of hash data in a plot file in order for the farmer to quickly fetch the proof of space in the next step, farming.  
+Not only the hash data but the checkpoint data, which will assist in faster proof of space retrieval, will be stored in the plot file. The plotting works from table 1 through table 7. \\
+{\bf Farming}
+Farming is the process of consrtucting prove to the network that ones actually owns a specific amount of disk space. To begin with, the network will release a challenge to every farmer who has participating in the game. Upon receiving the challenge, farmer goes to the last table, table 7, to find the matching data along with the corresponding checkpoint, stored in plot file, subsequently traverse the search by the matching data in the previous table, table 6, and following this routine to the first table, constructing a proof of space and send it out for verifying. In reverse than plotting, farming retrive data from the last table. \\
+{\bf Verifying}
+The verifying stage require 
+{\bf Plot filter}
+The plot filter is a threshold to decide whether the challenge has any possibility of getting rewards. It is used to prevent the farmer on finding proof of space that one's doesn't have. Farmers receive these signage points and compute a hash for each plot, at each signage point. If the hash starts with nine zeros, the plot passes the filter for that signage point, and can proceed. This disqualifies around 511/512 of all plot files in the network, for that signage point. The formula to compute the filter hash is
+\begin{align*}
+  \text{plot filter bits} = sha256(\text{plot id} + \text{sub-slot challenge} + \text{cc signage point})
+\end{align*}
+{\bf Sub-slot} 
+A segement of challenge that is generated by the timelord and will be issue to the farmer. The format of the sub-slot is as below
+\begin{verbatim}
+class ChallengeChainSubSlot(Streamable):
+  challenge_chain_end_of_slot_vdf: VDFInfo
+  infused_challenge_chain_sub_slot_hash: [bytes32]
+  subepoch_summary_hash: [bytes32]
+  new_sub_slot_iters: [uint64]
+  new_difficulty: [uint64] 
+\end{verbatim}
+{\bf Singage Point}
+The sinage point is a temporarily stage for sub-slot generating. Within 64 iteration of the sinage point, composing a complete sub-slot, each sinage point will be release by the timelord to the farmer every 9.375 seconds. The farmer, upon receiving the sinage point will compute the plot filter to see if it pass the threshold.
 
-
-
+%% 
 \section{Chia Plotting Process}
-The plotting process is when a farmer preperation work that the farmer has to completed before contributing to the network. The plotting process begins with storing many hash-like number in a file that stores on the farmer disk. Seven tables is initiate in the plot file with a specific plot constant k. 
-
-
+The plotting process could be analogous to the work done, such as fertilizing and irrigating then cropping the seed in the farm, while farming could be analogous to the process of harvesting the product. It begins with storing many hash-like number in a file that stores on the farmer disk. Seven tables is initiate in the plot file with a specific plot constant k. 
+Two parameters will be required when plotting initialize. A plot seed, which is received from the network, a plot constant k, which is assigned by the farmer. \\
 {\bf Plot constants k} The plot constants k represent the number of entries each table, which is determine by the farmer. The minumum disk space of the plot with $k = 32$ is 515.4 (GB) for temperarily storage and 104.7 (GB) for final storage. 
 \begin{align*}
   \text{Number of entries in each table} = 2^{k}, 32 \leqq k \leqq 50 \\
-  \text{Temporarily plot file size} \approx 3.75 \times k \times 2^{k} (byte)
-  \text{Final plot file size } \approx 0.762 \times k \times 2^{k} (btye)
+  \text{Temporarily plot file size} \approx 3.75 \times k \times 2^{k} (byte) \\
+  \text{Final plot file size } \approx 0.762 \times k \times 2^{k} (btye) \\
 \end{align*}
 {\bf Plot seed} The plot seed is a 32 byte constant received from the network to initialize each plot file, so that no two plot file will be the same. 
 \begin{align*}
-  \text{plot\_seed} \in [2^{256}]
+  \text{plot\_seed} \in [2^{256}] \\
 \end{align*}
 That is said, all the farmer need within the plotting process is the plot seed receiving online, everything else will be able to construct offline. The design of chia plotting process is intentionally design so that whomever gets a powerful machine, such as a ASIC or GPU won't create absolute advantage over those who don't, because the main motivation is letting the farmer purely use  The plotting process will be distinguish into the following four parts. \\
 {\bf 1. Forward propogation}
-The forward propogation is to insert data in each entries of the table, from table 1 to table 7. The dependency of the table is table i + 1 will relie on the talbe i (i = 0, 1, ... 6). Because this dependency, farmer who wish to accelerate the plotting process will not have the ability to predict what the next table content without waiting for the completion of the previous table. This will create a bottle-neck for those who wish to create a faster plotting method using a high performance machine. \\
+The forward propogation is to insert data in each entries of the table, from table 1 to table 7. The dependency of the table is table i + 1 will relie on the talbe i (i = 0, 1, ... 6). Because this dependency, farmer who wish to accelerate the plotting process will not have the ability to predict what the next table content without waiting for the completion of the previous table. This will create a bottle-neck for those who wish to create a faster plotting method using a high performance machine. Other than the first stage, the rest are extra optimization feature created by Chia network. With a fully propagation plot file, the farmer are allow to construct the proof of space. But considering the efficiency, Step 2 to 3 are recommended to operating, in order to reduce unused data and make good use of the disk space\\
 {\bf 2. Backward propogation}
-Backward propogation is to reduce the size of each table by getting rid of those entry that's not in use.\\
+Backward propogation is to reduce the size of each table by getting rid of those entry that's not in use. In each table, a left entry will contain data from the previous table, right entry contain data it calculate. The entry is useful to the next table, only if the left entry is equal to the right. Therefore, in this stage, it is dropping unused data where the left is not equal to the right. \\
 {\bf 3. Compression}
-The compression stage is to sort the content in each table. \\
+The compression stage is to compacting the content in each table and create a format for the efficiently retrival with bucket id. The  \\
 {\bf 4. Checkpoint}
 Checkpoint will create a faster index for future proof retrieval. \\
 
 
 {\bf Chacha8 and Blake3 hash-like function}
-The fundamental of chia plot generation is based on two hash functions, chacha8 and blake3, where chacha8 is used in the gerneration of the first table and blake3 is used in generation of the rest 6 tables. 
+The fundamental of chia plot generation is based on two hash functions, chacha8 and blake3, where chacha8 is used in the gerneration of the first table and blake3 is used in generation of the rest 6 tables. The hash function will fetch in a 
 {\bf Table 1}
-The generation of the table 1 required iteration through the entire entries with value up to $2^{k} - 1$.
-% \begin{figure}[ht]
-% \begin{center}
-% \includegraphics[height=4.5cm, width=7cm]{pic2.PNG}
-% \end{center}
-% {\footnotesize Fig. 2 Number nearby the edges are the amount of tasks when executing this edge. The thickness of connections exhibit the dependencies. Edges have low dependencies but high workload will be assigned to relatively idle PE. By this strategy, each PE can work on roughly the same task number and execution time.}
-% \end{figure}
+The generation of the table 1 required iteration through the entire entries with value up to $2^{k} - 1$, which is more than 4 billion entries with k32 plot. 
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[height=4.5cm, width=7cm]{Speedy_Chia_Threading.png}
+\end{center}
+{\footnotesize Fig. 2 The generation of table 1 required at lease 4 billion iteration in a k32 plot file.}
+\end{figure}
 
-{\bf Adaptive DLP.} Except for scheduling optimization, \parencite{adaptive_dlp} proposes a method applying different DLP approaches in specific situations. Although this paper mainly focuses on the kernel utilization, we can treat binary translation processing elements as enormous kernels inside. Data partitioning can be done according to the properties of basic blocks. If the basic blocks are comprised of small items, machine tends to adopt kernel partitioning to fit with the instructions. In contrary, basic blocks with big items are appropriate for inter-kernel strategy. 
-
-{\bf Kernel Improvement.} \parencite{dlp_in_streaming} introduces a solution efficiently applying kernel computation. It duplicates the kernels with potential following computations (multiplication). Machine operates the sequential computation in parallel that decreases the time spending on recursive computations. The additional computation cost is acceptable in exchange of performance reinforcement. \parencite{adaptive_dlp} also includes improvements about kernels. It demonstrates how to operate kernel partitioning. Small pieces of kernels help accelerate data fetching and computations due to shorter distance between PE and targets. 
-
-{\bf SIMD Exploitation.} 
-With the support of SIMD engine, such as ARM NEON and Intel AVX, the main processor could utilize vectorized code regions to realize DLP. Along with the dynamic Assembler we could extend the DLP to a dynamically detection at the run-time execution. The approach could be achieve by vectorizing the instruction set architecture (ISA) or convert the short instruction into longer instruction. 
-
-Previously-mentioned methods are seemingly solutions to deal with assembly sequences. Machine should pay extra cycles to complete their preliminary works. This cause them not capable of universally adopted. In spite that there are approaches available to address the loss in translation, they do not have a in-depth research throughout the whole computer architecture. Current papers simulate the data stream without taking penalty and exceptions into account. They have deficiency though, we can still figure out more and more possibilities following their directions. Notable advances will be made if the algorithm of DLP is optimized and avoid exceptional hardware efforts.
-
+\begin{figure*}[ht]
+  \begin{center}
+  \includegraphics[height=8.5cm, width=16cm]{Chia_Plot_Process.jpeg}
+  \end{center}
+  {\footnotesize Fig. 3 The dependcy between table 1 and table 2.}
+  \end{figure*}
+{\bf Dependency between table (i) and table (i + 1)}
+The dependency of table i and table i + 1 lie in that table i + 1 will required the matching entries in the left and right to calculate the offset of the tale i. 
+\section{Related work}
+{\bf Approach by madMax}
+One of the contributors of the open-source project, XPM GPU Miner, \parencite[]{mad_chia_plotter}, has successfully provided a highly parallelize architecture to support more efficient parallel computing to accelerate chia plotting by creating multiple threads on a multi-core processor. The result of his is 17 seconds for the table 1 using a 256 GB RAM dual Xeon® E5-2650v2@2.60GHz R720 processor with 16 threads. The method he uses is to create a thread pool manager in managing the status of each thread. The thread pool manager would not benefit from the table 1 generation since all the entry calculation is done in parallel. However, the thread pool manager could benefit from the matching function in the rest of the table generation, from table 2 to table 7. When generating table 2, some thread will be doing the matching calculation, some threads will drop those that is not in use. Therefore, introducing the locking mutex in the first stage of table 2 to table 7 is necessary. In addition, madMax solution also provides a larger RAM buffer usage. Take the first stage of k32 table 1 plot file generation, the disk operation wouldn't be operating until the all entry calculation is done. About 68 (GB) of memory space will be occupied if not flushing the data to disk during table 1 plotting.
+\begin{align*}
+  \text{Temperarily RAM usage} &= 2^{k} |_{k = 32} (entry/table) \times 16 (bytes/entry) \\
+                               &= 6.872 \times 10^{10} (Byte)
+\end{align*}
 \section{Approach with Parallel Computing}
 % Nvidia GPU why do you think GPU could assist the plotting process
-{\bf Nvidia GPU} 
-In \parencite{exploiting_longer_simd}, researcher also proposes a dynamic SIMD Assembler (DSA) generating the SIMD instruction to trigger the ARM NEON engine by detecting the vectorized code regions. The need of the DSA to detect the vectorized loop run-time is to compensated the weakness of the ARM auto-vectorization compiler count loop detection at compile time. Such condition as dynamic range loop, conditional loop and loop with a function call are three condition that the compiler couldn't possibly has optimized; thus, it will required the assistance from the run-time engine to parallelize the execution. 
+My intention of accelerating the Chia plotting starts from a post \parencite*[]{why_not_gpu_chia}, stating that it is impossible to use GPU to assist the plotting process. The reason is that using GPU to the plot will require a huge amount of temporary memory usage. If the device memory is not large enough, it will result in disk I/O operation penalties. Take k32 plot, for example, it will require more than 36 GB of memory space for storage in order to calculate table 1. The maximum device storage on an Nvidia GPU is less than 30 MB per node. Therefore, using GPU to assist the plotting, we still have to store the temporary plot file somewhere before writing back to disk space. 
 % Address the memory limitation device memory: 32 MB
-However, the two memory space is reside in the GPU model, the host memory and device memory. In order to invoke 
-{\bf Related Work by Max}
-One of the contributor of the open source project, XPM GPU Miner, \parencite[]{mad_chia_plotter}, has successfully provide highly parallelize archtecture to support more efficient parallel computing to accelerate chia plotting by creating multiple threads on a multi-core processor. The methods he use is create a thread pool manager on the plotting thread in order to synchronize the status of each thread. However, the API he provide is not thread-safe api. Therefore, with the motivation of the ability to parallelize the plotting into each
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[height=4.5cm, width=7cm]{Chia_GPU_architecture.png}
+  \end{center}
+  {\footnotesize Fig. 4 The architecture of GPU accelerated computing Chia plot.}
+  \end{figure}
 {\bf Software architecture}
-The main 
-Inherited from the source code repositories, I add a threading queue in front of GPU kernel function. Memory copying from host to device side is costly, and the approach is to copy data together to the kernel device at once to reduce the cost of issuing memory copy seperatly. The queue will collect data derived and iterated from the table 1 function and issue to the kernel when the queue is collecting enough data for GPU to calculate at the same working cycle. 
-%% Architecture figure to assist the explanation
+Adding the threading queue in front of GPU kernel function. Memory copying from host to device side is costly, and the approach is to copy data together to the kernel device at once to reduce the cost of issuing memory copy seperatly. The queue will collect data derived and iterated from the table 1 function and issue to the kernel when the queue is collecting enough data for GPU to calculate at the same working cycle. 
 
 % synchronize issue among different thread
-Regarding the synchronize issue among all different thread, no mutex is requird for the generation of the 1st table. The generation 
-
+Regarding the synchronize issue among all different thread, no mutex is requird for the generation of the 1st table. Since each entry is independent to each other, so the writing to disk would be affected by the lock mechanism.  
+\section{Result - without GPU}
+The implementation of mine is based on the calculation of the table 1. The generation of table 1 will require the chacha8 hash function which could be done in parallel. The result running on the TAMU Grace super computer cluster is approximately 900 seconds for k32 plot file and 1833 seconds for k33 plot file. The temporarily storage in k32 plot file is around 36 GB. While k33 plot file is around 76 GB. 
+\begin{table}
+  \caption{Frequency of Special Characters}
+  \label{tab:freq}
+  \begin{tabular}{ccccl}
+    \toprule
+    Plot constant k&Thread number&Time (sec)&Average (sec)\\
+    \midrule
+      & 4   & 911.52 &       \\
+    32& 8   & 908.96 & 908.23\\
+      & 16  & 906.99 &       \\
+      & 32  & 905.46 &       \\
+  \bottomrule
+      & 4   & 1840.32 &         \\
+    33& 8   & 1840.91 & 1833.53 \\
+      & 16  & 1825.87 &         \\
+      & 32  & 1827.00 &         \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 \section{Conclusions}
-After evaluating the enhancements and implementation difficulties, we propose our view of possible solutions on this topic. Programming GPU plotter has the concurrency issue that we have taken serious handle. 
-
-Our survey shows that DLP assists the system performance either in aspect of energy or speedup perspective. Considering computer structure limitations in overall could we find the best architecture to our targeted design. We aim to fulfill a DLP optimization with more practical constraints, e.g. memory dependencies, cold start overhead, data stream in reality with the proposed solutions. By doing so, unexpected conditions have a chance to be addressed.
-Probably, novel methods will be realized while we address them. 
-\parencite{chia_github_source}
+After evaluating the enhancements and implementation difficulties, I proposed my view of possible solutions to this topic. Using super-computer clusters with accelerated units or with a larger memory space will effectively improve the plotting speed in different aspects, however, the hardware cost is also one aspect everyone dedicating to using this solution has to take into serious consideration.  \\
+Conclusively, the result shows positive outcomes with respect to using the official source code on a simple desktop machine. Although future optimization is required to perfect the solution, I could conclude that the survey has left with some positive consequences.
+\parencite{chia_github} \parencite*[]{chia_github_doc} 
 \parencite{2_vdf}
 \section{Future Work}
-
+The future work will be focusing on improving the threading algorithm and the memory cache issue, with specifically what to keep in the temporarily storage and what not to keep in the temporarily storage. \\
+{\bf RAM usage} 
+Memory usage has been very cautious, my intention is not to overuse the memory space at the first attempt, therefore, my approach will still be limited by the disk I/O latency whenever writing 256 buckets of entry data from memory to disk during plotting frequently. But as discussed in the madMax solution, caching more data in memory before writing to disk will eliminate a huge amount of time. Therefore, the first optimization I will do regarding the current development is to cache more entries in memory and to write more buckets out to disk at the same event. \\
+{\bf Thread Pool}
+A threading pool manager will be added in order to handle the completion of each thread. The existence of the thread pool manager is to assist the rest of the tables when some of the threads might be doing one thing differently from the other. In addition to the entry calculation in table 2, the matching function search through table 1 will also be one of the tasks that could be done in parallel along with the entry calculation. 
 \section{Reference}
 \printbibliography[heading=none]
 

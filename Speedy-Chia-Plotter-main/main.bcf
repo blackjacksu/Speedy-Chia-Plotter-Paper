@@ -2344,13 +2344,11 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">mybib.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">adaptive_dlp</bcf:citekey>
-    <bcf:citekey order="2">dlp_in_streaming</bcf:citekey>
-    <bcf:citekey order="3">adaptive_dlp</bcf:citekey>
-    <bcf:citekey order="4">exploiting_longer_simd</bcf:citekey>
-    <bcf:citekey order="5">mad_chia_plotter</bcf:citekey>
-    <bcf:citekey order="6">chia_github_source</bcf:citekey>
-    <bcf:citekey order="7">2_vdf</bcf:citekey>
+    <bcf:citekey order="1">mad_chia_plotter</bcf:citekey>
+    <bcf:citekey order="2">why_not_gpu_chia</bcf:citekey>
+    <bcf:citekey order="3">chia_github</bcf:citekey>
+    <bcf:citekey order="4">chia_github_doc</bcf:citekey>
+    <bcf:citekey order="5">2_vdf</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

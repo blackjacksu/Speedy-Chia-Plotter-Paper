@@ -25,6 +25,15 @@
   url           = {https://github.com/Chia-Network}
 }
 
+@misc{chia_github_doc,
+  author        = {Bram Cohen, Gene Hoffman},
+  title         = {Chia Network},
+  month         = {},
+  year          = {2021},
+  howpublished  = {}, 
+  url           = {https://docs.chia.net/}
+}
+
 @misc{chia_github_pos,
   author        = {Bram Cohen, Gene Hoffman},
   title         = {Chia Network},
@@ -43,204 +52,24 @@
   url           = {https://github.com/madMAx43v3r/chia-plotter.git}
 }
 
-@inproceedings{code_cache_1,
-author = {Cota, Emilio G. and Carloni, Luca P.},
-title = {Cross-ISA Machine Instrumentation Using Fast and Scalable Dynamic Binary Translation},
-year = {2019},
-isbn = {9781450360203},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3313808.3313811},
-doi = {10.1145/3313808.3313811},
-abstract = {The rise in instruction set architecture (ISA) diversity and the growing adoption of virtual machines are driving a need for fast, scalable, full-system, cross-ISA emulation and instrumentation tools. Unfortunately, achieving high performance for these cross-ISA tools is challenging due to dynamic binary translation (DBT) overhead and the complexity of instrumenting full-system emulators. In this paper we improve cross-ISA emulation and instrumentation performance through three novel techniques. First, we increase floating point (FP) emulation performance by observing that most FP operations can be correctly emulated by surrounding the use of the host FP unit with a minimal amount of non-FP code. Second, we introduce the design of a translator with a shared code cache that scales for multi-core guests, even when they generate translated code in parallel at a high rate. Third, we present an ISA-agnostic instrumentation layer that can instrument guest operations that occur outside of the DBT’s intermediate representation (IR), which are common in full-system emulators. We implement our approach in Qelt, a high-performance cross-ISA machine emulator and instrumentation tool based on QEMU. Our results show that Qelt scales to 32 cores when emulating a guest machine used for parallel compilation, which demonstrates scalable code translation. Furthermore, experiments based on SPEC06 show that Qelt (1) outperforms QEMU as a full-system cross-ISA machine emulator by 1.76\texttimes{}/2.18\texttimes{} for integer/FP workloads, (2) outperforms state-of-the-art, cross-ISA, full-system instrumentation tools by 1.5\texttimes{}-3\texttimes{}, and (3) can match the performance of Pin, a state-of-the-art, same-ISA DBI tool, when used for complex instrumentation such as cache simulation.},
-booktitle = {Proceedings of the 15th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments},
-pages = {74–87},
-numpages = {14},
-keywords = {Floating Point, Scalability, Binary Instrumentation, Machine Emulation, Dynamic Binary Translation},
-location = {Providence, RI, USA},
-series = {VEE 2019}
+@misc{why_not_gpu_chia,
+  author        = {Christian Balcom},
+  title         = {Why not GPU},
+  month         = {},
+  year          = {},
+  howpublished  = {Github}, 
+  url           = {https://gist.github.com/computer-whisperer/42b8507b2fb506faf0b1c9ee1189cd58}
 }
 
-@article{code_cache_with_fiber,
-  author    = {Xuan Guo and
-               Robert D. Mullins},
-  title     = {Accelerate Cycle-Level Full-System Simulation of Multi-Core {RISC-V}
-               Systems with Binary Translation},
-  journal   = {CoRR},
-  volume    = {abs/2005.11357},
-  year      = {2020},
-  url       = {https://arxiv.org/abs/2005.11357},
-  eprinttype = {arXiv},
-  eprint    = {2005.11357},
-  timestamp = {Thu, 28 May 2020 17:38:09 +0200},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2005-11357.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@inproceedings{beyond_hellman,
+author = {Abusalah, Hamza and Alwen, Joël and Cohen, Bram and Khilko, Danylo and Pietrzak, Krzysztof and Reyzin, Leonid},
+year = {2017},
+month = {11},
+pages = {357-379},
+title = {Beyond Hellman’s Time-Memory Trade-Offs with Applications to Proofs of Space},
+isbn = {978-3-319-70696-2},
+doi = {10.1007/978-3-319-70697-9_13}
 }
 
-@ARTICLE{sliding_window_parallelism,  author={Mencagli, Gabriele and Torquati, Massimo and Griebler, Dalvan and Danelutto, Marco and Fernandes, Luiz Gustavo L.},  journal={IEEE Access},   title={Raising the Parallel Abstraction Level for Streaming Analytics Applications},   year={2019},  volume={7},  number={},  pages={131944-131961},  doi={10.1109/ACCESS.2019.2941183}}
-
-@INPROCEEDINGS{data_partition,  author={Chu, Michael and Ravindran, Rajiv and Mahlke, Scott},  booktitle={40th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2007)},   title={Data Access Partitioning for Fine-grain Parallelism on Multicore Architectures},   year={2007},  volume={},  number={},  pages={369-380},  doi={10.1109/MICRO.2007.15}}
-
-@inproceedings{basic_block,
-  title={Block Based Execution and Task Level Parallelism},
-  author={Richard Littin and J. A. David McWha and Murray Pearson and John G. Cleary},
-  year={1998}
-}
-
-@article{superword_parallelism,
-author = {Mendis, Charith and Amarasinghe, Saman},
-title = {GoSLP: Globally Optimized Superword Level Parallelism Framework},
-year = {2018},
-issue_date = {November 2018},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {2},
-number = {OOPSLA},
-url = {https://doi-org.srv-proxy1.library.tamu.edu/10.1145/3276480},
-doi = {10.1145/3276480},
-journal = {Proc. ACM Program. Lang.},
-month = {oct},
-articleno = {110},
-numpages = {28},
-keywords = {Integer Linear Programming, Vector Permutation, Dynamic Programming, Superword Level Parallelism, Auto-vectorization, Statement Packing}
-}
-
-@article{vector_parallelism,
-title = {Modular vector processor architecture targeting at data-level parallelism},
-journal = {Microprocessors and Microsystems},
-volume = {39},
-number = {4},
-pages = {237-249},
-year = {2015},
-issn = {0141-9331},
-doi = {https://doi.org/10.1016/j.micpro.2015.04.007},
-url = {https://www.sciencedirect.com/science/article/pii/S0141933115000502},
-author = {Seyed A. Rooholamin and Sotirios G. Ziavras},
-keywords = {Parallelism, Vector processor, Performance, Speedup, Benchmarking},
-abstract = {Taking advantage of DLP (Data-Level Parallelism) is indispensable in most data streaming and multimedia applications. Several architectures have been proposed to improve both the performance and energy consumption for such applications. Superscalar and VLIW (Very Long Instruction Word) processors along with SIMD (Single-Instruction Multiple-Data) and vector processor (VP) accelerators, are among the available options for designers to accomplish their desired requirements. We present an innovative architecture for a VP which separates the path for performing data shuffle and memory-indexed accesses from the data path for executing other vector instructions that access the memory. This separation speeds up the most common memory access operations by avoiding extra delays and unnecessary stalls. In our lane-based VP design, each vector lane uses its own private memory to avoid any stalls during memory access instructions. The proposed VP, which is developed in VHDL and prototyped on an FPGA, serves as a coprocessor for one or more scalar cores. Benchmarking shows that our VP can achieve very high performance. For example, it achieves a larger than 1500-fold speedup in the color space converting benchmark compared to running the code on a scalar core. The inclusion of distributed data shuffle engines across vector lanes has a spectacular impact on the execution time, primarily for applications like FFT (Fast-Fourier Transform) that require large amounts of data shuffling. Compared to running the benchmark on a VP without the shuffle engines, the speedup is 5.92 and 7.33 for the 64-point FFT without and with compiler optimization, respectively. Compared to runs on the scalar core, the achieved speedups for this benchmark are 52.07 and 110.45 without and with compiler optimization, respectively.}
-}
-
-@article{improv_simd_parallel,
-author = {Hong, Ding-Yong and Liu, Yu-Ping and Fu, Sheng-Yu and Wu, Jan-Jan and Hsu, Wei-Chung},
-title = {Improving SIMD Parallelism via Dynamic Binary Translation},
-year = {2018},
-issue_date = {May 2018},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {17},
-number = {3},
-issn = {1539-9087},
-url = {https://doi.org/10.1145/3173456},
-doi = {10.1145/3173456},
-abstract = {Recent trends in SIMD architecture have tended toward longer vector lengths, and more enhanced SIMD features have been introduced in newer vector instruction sets. However, legacy or proprietary applications compiled with short-SIMD ISA cannot benefit from the long-SIMD architecture that supports improved parallelism and enhanced vector primitives, resulting in only a small fraction of potential peak performance. This article presents a dynamic binary translation technique that enables short-SIMD binaries to exploit benefits of new SIMD architectures by rewriting short-SIMD loop code. We propose a general approach that translates loops consisting of short-SIMD instructions to machine-independent IR, conducts SIMD loop transformation/optimization at this IR level, and finally translates to long-SIMD instructions. Two solutions are presented to enforce SIMD load/store alignment, one for the problem caused by the binary translator’s internal translation condition and one general approach using dynamic loop peeling optimization. Benchmark results show that average speedups of 1.51\texttimes{} and 2.48\texttimes{} are achieved for an ARM NEON to x86 AVX2 and x86 AVX-512 loop transformation, respectively.},
-journal = {ACM Trans. Embed. Comput. Syst.},
-month = {feb},
-articleno = {61},
-numpages = {27},
-keywords = {SIMD, compiler annotation, dynamic loop peeling, Dynamic binary translation, vectorization}
-}
-
-@INPROCEEDINGS{exploiting_longer_simd,  author={Hong, Ding-Yong and Fu, Sheng-Yu and Liu, Yu-Ping and Wu, Jan-Jan and Hsu, Wei-Chung},  booktitle={2016 IEEE 22nd International Conference on Parallel and Distributed Systems (ICPADS)},   title={Exploiting Longer SIMD Lanes in Dynamic Binary Translation},   year={2016},  volume={},  number={},  pages={853-860},  doi={10.1109/ICPADS.2016.0115}}
-
-@inproceedings{optimizing_dynamic_binary,
-author = {Li, Jianhui and Zhang, Qi and Xu, Shu and Huang, Bo},
-year = {2006},
-month = {04},
-pages = {12 pp.-},
-title = {Optimizing dynamic binary translation for SIMD instructions},
-isbn = {0-7695-2499-0},
-doi = {10.1109/CGO.2006.27}
-}
-
-@INPROCEEDINGS {liquid_abstracting_simd,
-author = {S. Mahlke and A. Hormati and K. Flautner and N. Clark and S. Yehia},
-booktitle = {2007 IEEE 13th International Symposium on High Performance Computer Architecture},
-title = {Liquid SIMD: Abstracting SIMD Hardware using Lightweight Dynamic Mapping},
-year = {2007},
-volume = {},
-issn = {},
-pages = {216-227},
-keywords = {null},
-doi = {10.1109/HPCA.2007.346199},
-url = {https://doi.ieeecomputersociety.org/10.1109/HPCA.2007.346199},
-publisher = {IEEE Computer Society},
-address = {Los Alamitos, CA, USA},
-month = {feb}
-}
-
-@INPROCEEDINGS{dynamic_revectorization,  author={Hallou, Nabil and Rohou, Erven and Clauss, Philippe and Ketterlin, Alain},  booktitle={2015 International Conference on Embedded Computer Systems: Architectures, Modeling, and Simulation (SAMOS)},   title={Dynamic re-vectorization of binary code},   year={2015},  volume={},  number={},  pages={228-237},  doi={10.1109/SAMOS.2015.7363680}}
-
-@INPROCEEDINGS{boosting_simd,  author={Jordan, Michael Guilherme and Knorst, Tiago and Vicenzi, Julio and Rutzig, Mateus Beck},  booktitle={2019 Design, Automation   Test in Europe Conference   Exhibition (DATE)},   title={Boosting SIMD Benefits through a Run-time and Energy Efficient DLP Detection},   year={2019},  volume={},  number={},  pages={722-727},  doi={10.23919/DATE.2019.8714826}}
-
-@article{an_energy_efficient_multitarget,
-author = {Knorst, Tiago and Costella Vicenzi, Julio and Jordan, Michael and Almeida, Jonathan and Korol, Guilherme and Beck, Antonio and Rutzig, Mateus},
-year = {2022},
-month = {01},
-pages = {1-28},
-title = {An energy efficient multi-target binary translator for instruction and data level parallelism exploitation},
-journal = {Design Automation for Embedded Systems},
-doi = {10.1007/s10617-021-09258-6}
-}
-
-@article{task_arrangement,
-title = {Exploit the data level parallelism and schedule dependent tasks on the multi-core processors},
-journal = {Information Sciences},
-volume = {585},
-pages = {382-394},
-year = {2022},
-issn = {0020-0255},
-doi = {https://doi.org/10.1016/j.ins.2021.10.072},
-url = {https://www.sciencedirect.com/science/article/pii/S0020025521010963},
-author = {Zijun Han and Guangzhi Qu and Bo Liu and Feng Zhang},
-keywords = {Task decomposition, Data dependency, DAG, Multi-core task scheduling},
-abstract = {With the growing use of multi-core processors in the market, efficient and effective task parallelization strategies are on huge demand, so are the task scheduling algorithms. The scalability and efficiency of the existing algorithms on multi-core task scheduling need to be improved. To schedule real-time tasks on a multi-core processor, any pair of inter-dependent tasks must be executed following their original execution order. The directed acyclic graph (DAG) is commonly used to study the internal structure of a program. In this work, we investigated the property of the data dependency to eliminate the unnecessary execution constraints, and improved the DAG model by incorporating the temporal property of these dependencies. Based on such a model, we proposed a dynamic decomposed scheduling (DDS) strategy. With DDS, the dependent tasks could be released and executed earlier before the completion of their precedent tasks without producing any data hazards. The experiments were conducted on both synthesized tasks and real industrial embedded applications, the results show that DDS has a good performance in multi-core task scheduling, and it outperforms the state-of-the-art scheduling algorithms including the decomposed scheduling, the global scheduling, and the federated scheduling.}
-}
-
-@INPROCEEDINGS{weighted_edge_scheduling,  author={Chu, Michael and Ravindran, Rajiv and Mahlke, Scott},  booktitle={40th Annual IEEE/ACM International Symposium on Microarchitecture (MICRO 2007)},   title={Data Access Partitioning for Fine-grain Parallelism on Multicore Architectures},   year={2007},  volume={},  number={},  pages={369-380},  doi={10.1109/MICRO.2007.15}}
-
-@inproceedings{adaptive_dlp,
-author = {Song, Lili and Wang, Ying and Han, Yinhe and Zhao, Xin and Liu, Bosheng and Li, Xiaowei},
-title = {C-Brain: A Deep Learning Accelerator That Tames the Diversity of CNNs through Adaptive Data-Level Parallelization},
-year = {2016},
-isbn = {9781450342360},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/2897937.2897995},
-doi = {10.1145/2897937.2897995},
-booktitle = {Proceedings of the 53rd Annual Design Automation Conference},
-articleno = {123},
-numpages = {6},
-location = {Austin, Texas},
-series = {DAC '16}
-}
-
-@article{dlp_in_streaming,
-author = {Plavec, Franjo and Vranesic, Zvonko and Brown, Stephen},
-title = {Exploiting Task- and Data-Level Parallelism in Streaming Applications Implemented in FPGAs},
-year = {2013},
-issue_date = {December 2013},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {6},
-number = {4},
-issn = {1936-7406},
-url = {https://doi.org/10.1145/2535932},
-doi = {10.1145/2535932},
-abstract = {This article describes the design and implementation of a novel compilation flow that implements circuits in FPGAs from a streaming programming language. The streaming language supported is called FPGA Brook and is based on the existing Brook language. It allows system designers to express applications in a way that exposes parallelism, which can be exploited through hardware implementation. FPGA Brook supports replication, allowing parts of an application to be implemented as multiple hardware units operating in parallel. Hardware units are interconnected through FIFO buffers which use the small memory modules available in FPGAs. The FPGA Brook automated design flow uses a source-to-source compiler, developed as a part of this work, and combines it with a commercial behavioral synthesis tool to generate the hardware implementation. A suite of benchmark applications was developed in FPGA Brook and implemented using our design flow. Experimental results indicate that performance of many applications scales well with replication. Our benchmark applications also achieve significantly better results than corresponding implementations using a commercial behavioral synthesis tool. We conclude that using an automated design flow for implementation of streaming applications in FPGAs is a promising methodology.},
-journal = {ACM Trans. Reconfigurable Technol. Syst.},
-month = {dec},
-articleno = {16},
-numpages = {37},
-keywords = {Data parallelism, parallel reduction, high-level synthesis, streaming, field-programmable gate arrays, scalability, behavioral synthesis, replication, task parallelism, throughput}
-}
-
-@article{neural_machine,
-   title={Neural Machine Translation Inspired Binary Code Similarity Comparison beyond Function Pairs},
-   url={http://dx.doi.org/10.14722/ndss.2019.23492},
-   DOI={10.14722/ndss.2019.23492},
-   journal={Proceedings 2019 Network and Distributed System Security Symposium},
-   publisher={Internet Society},
-   author={Zuo, Fei and Li, Xiaopeng and Young, Patrick and Luo, Lannan and Zeng, Qiang and Zhang, Zhexin},
-   year={2019} }
 
 

@@ -19,170 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{adaptive_dlp}{inproceedings}{}
-      \name{author}{6}{}{%
-        {{hash=13a345b1c4eb3446be4df069ec9c2221}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Lili},
-           giveni={L\bibinitperiod}}}%
-        {{hash=330e18fb499a5fa7fa598125962993f7}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Ying},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=8d8a3f556e48c279a12041db46f1e47c}{%
-           family={Han},
-           familyi={H\bibinitperiod},
-           given={Yinhe},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=61a5f11b3a300a191d13bd823c06cf4c}{%
-           family={Zhao},
-           familyi={Z\bibinitperiod},
-           given={Xin},
-           giveni={X\bibinitperiod}}}%
-        {{hash=b27caaa270eaa73de273cc60e7474bbd}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Bosheng},
-           giveni={B\bibinitperiod}}}%
-        {{hash=417dbb5cf4a86930cbfab55d146428ee}{%
-           family={Li},
-           familyi={L\bibinitperiod},
-           given={Xiaowei},
-           giveni={X\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {Austin, Texas}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{2a6e6e9ef298030c48eb800ffe6984dc}
-      \strng{fullhash}{ab8bf26a0646b27b86cad406c27bedcd}
-      \strng{bibnamehash}{2a6e6e9ef298030c48eb800ffe6984dc}
-      \strng{authorbibnamehash}{2a6e6e9ef298030c48eb800ffe6984dc}
-      \strng{authornamehash}{2a6e6e9ef298030c48eb800ffe6984dc}
-      \strng{authorfullhash}{ab8bf26a0646b27b86cad406c27bedcd}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the 53rd Annual Design Automation Conference}
-      \field{isbn}{9781450342360}
-      \field{series}{DAC '16}
-      \field{title}{C-Brain: A Deep Learning Accelerator That Tames the Diversity of CNNs through Adaptive Data-Level Parallelization}
-      \field{year}{2016}
-      \verb{doi}
-      \verb 10.1145/2897937.2897995
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1145/2897937.2897995
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1145/2897937.2897995
-      \endverb
-    \endentry
-    \entry{dlp_in_streaming}{article}{}
-      \name{author}{3}{}{%
-        {{hash=963ebc2749e244a8a0f375f62bf86509}{%
-           family={Plavec},
-           familyi={P\bibinitperiod},
-           given={Franjo},
-           giveni={F\bibinitperiod}}}%
-        {{hash=13cda7a751f2c759ca5c34cc2d3e226e}{%
-           family={Vranesic},
-           familyi={V\bibinitperiod},
-           given={Zvonko},
-           giveni={Z\bibinitperiod}}}%
-        {{hash=6e6498c671cf0abbd2d02deff785c7ff}{%
-           family={Brown},
-           familyi={B\bibinitperiod},
-           given={Stephen},
-           giveni={S\bibinitperiod}}}%
-      }
-      \list{location}{1}{%
-        {New York, NY, USA}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
-      \strng{fullhash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
-      \strng{bibnamehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
-      \strng{authorbibnamehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
-      \strng{authornamehash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
-      \strng{authorfullhash}{f8d42f72ae0b801ad8f8318b2edcdfb1}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{This article describes the design and implementation of a novel compilation flow that implements circuits in FPGAs from a streaming programming language. The streaming language supported is called FPGA Brook and is based on the existing Brook language. It allows system designers to express applications in a way that exposes parallelism, which can be exploited through hardware implementation. FPGA Brook supports replication, allowing parts of an application to be implemented as multiple hardware units operating in parallel. Hardware units are interconnected through FIFO buffers which use the small memory modules available in FPGAs. The FPGA Brook automated design flow uses a source-to-source compiler, developed as a part of this work, and combines it with a commercial behavioral synthesis tool to generate the hardware implementation. A suite of benchmark applications was developed in FPGA Brook and implemented using our design flow. Experimental results indicate that performance of many applications scales well with replication. Our benchmark applications also achieve significantly better results than corresponding implementations using a commercial behavioral synthesis tool. We conclude that using an automated design flow for implementation of streaming applications in FPGAs is a promising methodology.}
-      \field{issn}{1936-7406}
-      \field{journaltitle}{ACM Trans. Reconfigurable Technol. Syst.}
-      \field{month}{12}
-      \field{number}{4}
-      \field{title}{Exploiting Task- and Data-Level Parallelism in Streaming Applications Implemented in FPGAs}
-      \field{volume}{6}
-      \field{year}{2013}
-      \verb{doi}
-      \verb 10.1145/2535932
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1145/2535932
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1145/2535932
-      \endverb
-      \keyw{Data parallelism,parallel reduction,high-level synthesis,streaming,field-programmable gate arrays,scalability,behavioral synthesis,replication,task parallelism,throughput}
-    \endentry
-    \entry{exploiting_longer_simd}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=875dd65c6f9e09afed1329060883fbcd}{%
-           family={Hong},
-           familyi={H\bibinitperiod},
-           given={Ding-Yong},
-           giveni={D\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=78db3f17b21963d6734da1ed7ffa7fb1}{%
-           family={Fu},
-           familyi={F\bibinitperiod},
-           given={Sheng-Yu},
-           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=e33bb8cd99dc7969507ae3946c0f63b5}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Yu-Ping},
-           giveni={Y\bibinithyphendelim P\bibinitperiod}}}%
-        {{hash=2584cfd5e0897bf21a8eb46c8d27306f}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Jan-Jan},
-           giveni={J\bibinithyphendelim J\bibinitperiod}}}%
-        {{hash=59eff1482afbcb6d7e01d07362be6df7}{%
-           family={Hsu},
-           familyi={H\bibinitperiod},
-           given={Wei-Chung},
-           giveni={W\bibinithyphendelim C\bibinitperiod}}}%
-      }
-      \strng{namehash}{cde18917071668da187054c4267bcc69}
-      \strng{fullhash}{7e329d85cc8b0a6782c076bc99c7a97d}
-      \strng{bibnamehash}{cde18917071668da187054c4267bcc69}
-      \strng{authorbibnamehash}{cde18917071668da187054c4267bcc69}
-      \strng{authornamehash}{cde18917071668da187054c4267bcc69}
-      \strng{authorfullhash}{7e329d85cc8b0a6782c076bc99c7a97d}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{2016 IEEE 22nd International Conference on Parallel and Distributed Systems (ICPADS)}
-      \field{title}{Exploiting Longer SIMD Lanes in Dynamic Binary Translation}
-      \field{year}{2016}
-      \field{pages}{853\bibrangedash 860}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1109/ICPADS.2016.0115
-      \endverb
-    \endentry
     \entry{mad_chia_plotter}{misc}{}
       \name{author}{1}{}{%
         {{hash=f6416cd4af7f0809c703a4549a15b6b3}{%
@@ -197,8 +33,8 @@
       \strng{authorbibnamehash}{f6416cd4af7f0809c703a4549a15b6b3}
       \strng{authornamehash}{f6416cd4af7f0809c703a4549a15b6b3}
       \strng{authorfullhash}{f6416cd4af7f0809c703a4549a15b6b3}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{Github}
@@ -208,6 +44,90 @@
       \endverb
       \verb{url}
       \verb https://github.com/madMAx43v3r/chia-plotter.git
+      \endverb
+    \endentry
+    \entry{why_not_gpu_chia}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bcfb6d7efab05ec61a80c96f0131c007}{%
+           family={Balcom},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{bcfb6d7efab05ec61a80c96f0131c007}
+      \strng{fullhash}{bcfb6d7efab05ec61a80c96f0131c007}
+      \strng{bibnamehash}{bcfb6d7efab05ec61a80c96f0131c007}
+      \strng{authorbibnamehash}{bcfb6d7efab05ec61a80c96f0131c007}
+      \strng{authornamehash}{bcfb6d7efab05ec61a80c96f0131c007}
+      \strng{authorfullhash}{bcfb6d7efab05ec61a80c96f0131c007}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Github}
+      \field{title}{Why not GPU}
+      \verb{urlraw}
+      \verb https://gist.github.com/computer-whisperer/42b8507b2fb506faf0b1c9ee1189cd58
+      \endverb
+      \verb{url}
+      \verb https://gist.github.com/computer-whisperer/42b8507b2fb506faf0b1c9ee1189cd58
+      \endverb
+    \endentry
+    \entry{chia_github}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a3b5a354aa531bd31d47d5bc561f6164}{%
+           family={Bram\bibnamedelima Cohen},
+           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Gene\bibnamedelima Hoffman},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{fullhash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{bibnamehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{authorbibnamehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{authornamehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{authorfullhash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Github}
+      \field{title}{Chia Network}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://github.com/Chia-Network
+      \endverb
+      \verb{url}
+      \verb https://github.com/Chia-Network
+      \endverb
+    \endentry
+    \entry{chia_github_doc}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a3b5a354aa531bd31d47d5bc561f6164}{%
+           family={Bram\bibnamedelima Cohen},
+           familyi={B\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Gene\bibnamedelima Hoffman},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{fullhash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{bibnamehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{authorbibnamehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{authornamehash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \strng{authorfullhash}{a3b5a354aa531bd31d47d5bc561f6164}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chia Network}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://docs.chia.net/
+      \endverb
+      \verb{url}
+      \verb https://docs.chia.net/
       \endverb
     \endentry
     \entry{2_vdf}{article}{}
@@ -234,8 +154,8 @@
       \strng{authorbibnamehash}{9780729c0a3cd2ac84c7e3809c494521}
       \strng{authornamehash}{9780729c0a3cd2ac84c7e3809c494521}
       \strng{authorfullhash}{9780729c0a3cd2ac84c7e3809c494521}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IACR Cryptol. ePrint Arch.}
@@ -246,7 +166,6 @@
       \range{pages}{1}
     \endentry
   \enddatalist
-  \missing{chia_github_source}
 \endrefsection
 \endinput
 
